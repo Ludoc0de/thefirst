@@ -6,7 +6,7 @@
     <?php
         while ($dataPosts = $posts->fetch()) {
     ?>
-    <div class="">
+    <div class="first-div-section">
         <a class="" href="index.php?action=post&amp;id=<?=$dataPosts['id'];?>">
             <h2>
                 <?=htmlspecialchars($dataPosts['title']);?>
