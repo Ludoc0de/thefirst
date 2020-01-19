@@ -1,0 +1,50 @@
+.main-body {
+  background: #f5f0ec;
+}
+
+.news {
+  margin: 1em;
+  transition: transform 0.7s ease;
+  opacity: 0.9;
+}
+
+.news:hover {
+  box-shadow: 0em 0em 0.5em black;
+  transform: scale(1.1);
+}
+
+.header-comment {
+  margin: 1.5em 0 0 0;
+}
+
+.fa-circle {
+  font-size: 0.3em;
+  position: relative;
+  bottom: 8px;
+}
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: 0 0 0.3em 0.15em rgba(35, 39, 43, 0.5) !important;
+}
+
+.border-h3 {
+  border-bottom: 3px solid !important;
+}
+
+.underline-effect::after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #343a40;
+  transition: 0.4s ease;
+}
+
+.underline-effect:hover::after {
+  width: 100%;
+}
+
+.backgroundImage {
+  background: url("lune2bis.jpg");
+}
