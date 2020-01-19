@@ -104,6 +104,7 @@
     -->
     <!-- script -->
     <script src="/thefirst/public/js/main.js"></script>
+    <script src="/thefirst/public/js/slider.js"></script>
 </body>
 
 </html>
