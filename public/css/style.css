@@ -12,6 +12,7 @@
 #navbar {
   overflow: hidden;
   background-color: #424140;
+  margin-bottom: 1em;
 }
 
 ul {
@@ -49,7 +50,23 @@ li {
 .sticky + .content {
   padding-top: 60px;
 }
-/* */
+/* frontend content */
+/*section*/
+
+.first-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.first-div-section {
+  height: 250px;
+  width: 400px;
+  background-color: #f7c8a3;
+  padding-left: 20px;
+  margin: 50px 35px;
+  border-radius: 10px;
+}
 
 .news {
   margin: 1em;
