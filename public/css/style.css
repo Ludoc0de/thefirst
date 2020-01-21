@@ -68,6 +68,23 @@ li {
   border-radius: 10px;
 }
 
+#containerSlide {
+  height: 125px;
+  overflow: hidden;
+}
+
+.slideText {
+  margin-top: 32%;
+}
+
+/*
+.slideText {
+  top: 13%;
+  right: 5%;
+  font-size: 15px;
+}
+*/
+
 .news {
   margin: 1em;
   transition: transform 0.7s ease;
