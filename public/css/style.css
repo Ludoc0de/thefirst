@@ -68,7 +68,7 @@ li {
   border-radius: 10px;
 }
 
-#containerSlide {
+.containerSlide {
   height: 125px;
   overflow: hidden;
 }

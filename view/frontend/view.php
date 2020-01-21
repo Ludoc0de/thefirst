@@ -16,7 +16,7 @@
             <br>le <?=$dataPosts['creation_date_fr'];?>
         </p>
 
-        <div id="containerSlide">
+        <div class="containerSlide">
             <p class="slideText">
                 <?=nl2br($dataPosts['content']);?>
             </p>
