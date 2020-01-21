@@ -1,12 +1,22 @@
 class sliderText {
-    constructor(container, text) {
-        this.container = container;
+    constructor(text) {
         this.text = text;
+
+        //listener
+        this.containers = document.querySelectorAll(".first-div-section");
+
+        for (let container of this.containers) {
+            container.addEventListener("mouseover", this.over);
+        }
+
+    }
+
+    over() {
+        console.log('good');
     }
 }
 
-const container = document.querySelector("#containerSlide");
 
 const text = document.querySelector(".slideText");
 
-const slider = new sliderText(container, text);
+const slider = new sliderText(text);
