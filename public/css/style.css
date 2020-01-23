@@ -64,6 +64,7 @@ li {
 .sticky + .content {
   padding-top: 60px;
 }
+
 /* frontend content */
 /*section*/
 
@@ -88,12 +89,12 @@ li {
 }
 
 .slideText {
-  margin-top: 32%;
-  /*
-  top: 13%;
-  right: 5%;
-  font-size: 15px;
-  */
+  margin-top: 125px;
+  transition: transform 5s linear;
+}
+
+.first-div-section:hover .slideText {
+  transform: translateY(-305px);
 }
 
 .fa-circle {
