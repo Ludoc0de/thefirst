@@ -1,4 +1,4 @@
-<?php $title = "Short storie";?>
+<?php $title = "Manger locale";?>
 
 <?php ob_start()?>
 
