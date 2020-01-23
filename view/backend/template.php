@@ -16,7 +16,7 @@
     <header class="pb-2">
         <div class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 justify-content-end">
-                <a class="navbar-brand" href="/projet4/index.php?action=adminPage">Administration</a>
+                <a class="navbar-brand" href="/thefirst/index.php?action=adminPage">Administration</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,17 +34,17 @@
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link text-dark underline-effect" href="/projet4/index.php">
+                            <a class="nav-link text-dark underline-effect" href="/thefirst/index.php">
                                 Accueil
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link text-dark underline-effect" href="/projet4/index.php?action=adminPage">
+                            <a class="nav-link text-dark underline-effect" href="/thefirst/index.php?action=adminPage">
                                 Administration
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link text-dark underline-effect" href="/projet4/view/frontend/logout.php">
+                            <a class="nav-link text-dark underline-effect" href="/thefirst/view/frontend/logout.php">
                                 Se déconnecter
                             </a>
                         </li>

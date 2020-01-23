@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link underline-effect" href="/projet4/index.php">Accueil</a>
+                    <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
                 </li>
                 <li>
                     <a class="nav-link underline-effect" href="#">
@@ -45,7 +45,7 @@
                         if (isset($_SESSION['nickname'])) {
                     ?>
                 <li>
-                    <a class="nav-link underline-effect" href="/projet4/index.php?action=adminPage">
+                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
                         Administration
                     </a>
                 </li>
@@ -56,13 +56,13 @@
                     <?php
                         if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
                     ?>
-                    <a class="nav-link underline-effect" href="/projet4/view/frontend/logout.php">
+                    <a class="nav-link underline-effect" href="/thefirst/view/frontend/logout.php">
                         Se déconnecter
                     </a>
                     <?php
                         } else {
                     ?>
-                    <a class="nav-link underline-effect" href="/projet4/index.php?action=loginPage">
+                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
                         Se connecter
                     </a>
                     <?php
