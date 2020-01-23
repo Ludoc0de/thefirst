@@ -27,6 +27,7 @@ li {
   display: flex;
   justify-content: center;
 }
+
 .nav-link {
   color: #f2f2f2;
   text-align: center;
@@ -35,6 +36,19 @@ li {
   font-size: 17px;
   text-decoration: none;
   align-content: center;
+}
+
+.underline-effect::after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #c4c0bc;
+  transition: 0.4s ease;
+}
+
+.underline-effect:hover::after {
+  width: 100%;
 }
 
 .content {
@@ -75,62 +89,15 @@ li {
 
 .slideText {
   margin-top: 32%;
-}
-
-.defaultJs {
-  background-color: red;
-}
-/*
-.slideText {
+  /*
   top: 13%;
   right: 5%;
   font-size: 15px;
-}
-*/
-
-.news {
-  margin: 1em;
-  transition: transform 0.7s ease;
-  opacity: 0.9;
-}
-
-.news:hover {
-  box-shadow: 0em 0em 0.5em black;
-  transform: scale(1.1);
-}
-
-.header-comment {
-  margin: 1.5em 0 0 0;
+  */
 }
 
 .fa-circle {
   font-size: 0.3em;
   position: relative;
   bottom: 8px;
-}
-
-.form-control:focus {
-  border-color: black;
-  box-shadow: 0 0 0.3em 0.15em rgba(35, 39, 43, 0.5) !important;
-}
-
-.border-h3 {
-  border-bottom: 3px solid !important;
-}
-
-.underline-effect::after {
-  display: block;
-  content: "";
-  width: 0px;
-  height: 2px;
-  background: #c4c0bc;
-  transition: 0.4s ease;
-}
-
-.underline-effect:hover::after {
-  width: 100%;
-}
-
-.backgroundImage {
-  background: url("lune2bis.jpg");
 }
