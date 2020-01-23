@@ -64,24 +64,6 @@ function checkLogin($nickname, $pass)
     }
 }
 
-/*
-function checkLogin($nickname, $pass){
-$logManager = new LogManager();
-$check = $logManager->logIn($nickname, $pass);
-$checkPass = password_verify($_POST['pass'], $check['pass']);
-
-if (!$check){
-die("identifiant ou mot de passe incorrect");
-}
-elseif ($checkPass) {
-$_SESSION['id'] = $check['id'];
-$_SESSION['nickname'] = $check['nickname'];
-} else {
-die("identifiant ou mot de passe incorrect");
-}
-}
- */
-
 function adminPage()
 {
     require "view/backend/adminView.php";
