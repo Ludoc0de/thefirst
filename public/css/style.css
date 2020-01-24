@@ -65,7 +65,7 @@ li {
   padding-top: 60px;
 }
 
-/* frontend content */
+/* frontend view */
 /*section*/
 
 .first-section {
@@ -101,4 +101,86 @@ li {
   font-size: 0.3em;
   position: relative;
   bottom: 8px;
+}
+
+/*frontend postView */
+.postView-section {
+  width: 600px;
+  margin: auto;
+}
+
+.postView-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.postView-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.postView-input,
+.postView-textarea {
+  width: 100%;
+  margin: 15px 0px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.25s linear;
+}
+
+.postView-input:focus,
+.postView-textarea:focus {
+  box-shadow: 0px 2px 15px #424140;
+}
+
+.postView-input {
+  height: 25px;
+}
+
+.postView-textarea {
+  height: 80px;
+}
+
+.postView-btn-input {
+  border-radius: 10px;
+  color: #f7c8a3;
+  background-color: #424140;
+  font-size: larger;
+  height: 40px;
+  width: 100%;
+}
+
+.postView-first-a {
+  text-decoration: none;
+}
+
+.postView-first-a:hover {
+  color: #424140;
+  font-size: large;
+  transition: 0.25s linear;
+  text-decoration: underline;
+}
+
+.postView-comment-div {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.fa-circle {
+  color: #f7c8a3;
+  border: 1px solid #424140;
+  border-radius: 50%;
+}
+
+.postView-comment-btn {
+  border: none;
+}
+
+.postView-third-p {
+  height: 30px;
+  margin-left: 20px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(66, 65, 64, 0.5);
+  background-color: white;
 }
