@@ -5,6 +5,15 @@
 <section class="first-section">
     <?php
         while ($dataPosts = $posts->fetch()) {
+            $images = [
+                "<img class='view-image-size' src=public/images/lune2.jpg",
+                "2",
+                "3",
+                "4",
+                "5"
+            ];
+            
+            foreach($images as $image) {
     ?>
     <div class="first-div-section">
         <a class="" href="index.php?action=post&amp;id=<?=$dataPosts['id'];?>">
@@ -23,9 +32,15 @@
         </div>
 
     </div>
+    <div class="view-images">
+        <?= "$image <br>";?>
+    </div>
     <?php
         }
         $posts->closeCursor();
+    ?>
+    <?php
+    }
     ?>
 </section>
 
