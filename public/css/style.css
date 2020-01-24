@@ -71,7 +71,21 @@ li {
 .first-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+}
+
+.view-image-size {
+  width: 100px;
+  height: 100px;
+}
+
+.view-images {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #424140;
+  border-radius: 5px;
+  position: relative;
+  top: 0px;
+  right: 0px;
 }
 
 .first-div-section {
