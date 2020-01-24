@@ -2,12 +2,8 @@
 
 <?php ob_start()?>
 
-<section class="post pt-5">
-    <div class="row bg-dark text-light rounded">
-        <h1 class="mx-auto">Billet simple pour l'Alaska</h1>
-    </div>
-
-    <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+<section class="postView-section">
+    <div class="postView-div">
         <h2>
             <u>
                 <?=htmlspecialchars($post['title']);?>
@@ -18,49 +14,50 @@
             <?=nl2br($post['content']);?>
         </p>
 
-        <h3 class="my-3">Commentaires</h3>
+        <h3 class="postView-h3">Commentaires</h3>
 
         <form action="index.php?action=addComment&amp;id=<?=$post['id']?>" method="post">
-            <div class="form-group">
+            <div class="postView-form">
                 <label for="author">Auteur</label>
-                <input type="text" id="author" class="bg-light form-control" name="author" placeholder="Auteur" />
-            </div>
-            <div class="form-group">
+                <input type="text" id="author" class="postView-input" name="author" placeholder="Auteur" />
+                <br>
                 <label for="comment">Commentaire</label>
-                <textarea id="comment" class="bg-light form-control" name="comment"></textarea>
+                <textarea id="comment" class="postView-textarea" name="comment"></textarea>
             </div>
             <div>
-                <input type="submit" class="btn btn-dark mb-3"
+                <input type="submit" class="postView-btn-input"
                     onclick=" return confirm('Confirmez-vous l\'envois du commentaire ?')" />
             </div>
         </form>
     </div>
 
-    <p class="col-lg-6 col-md-8 mx-auto">
-        <a href="index.php" class="text-dark">Retour à la liste des chapitres</a>
+    <p class="postView-first-p">
+        <a href="index.php" class="postView-first-a">
+            Retour à l'accueil
+        </a>
     </p>
 </section>
-<section class="row">
-    <div class="col-lg-6 col-md-8 mx-auto">
+<section class="postView-section">
+    <div class="postView-comment-div">
         <?php
             while ($comment = $comments->fetch()) {
         ?>
-        <p class="header-comment">
-            <span class="text-secondary">
-                <i class="fas fa-circle text-warning border rounded border-dark"></i> le
+        <p class="postView-second-p">
+            <span class="postView-comment-date">
+                <i class="fas fa-circle"></i> le
                 <?=$comment['comment_date_fr'] . ' par ';?>
             </span>
-            <span class="text-white bg-dark px-1 rounded">
+            <span class="postView-comment-author">
                 <?=htmlspecialchars($comment['author']);?>
             </span>
             <a href="index.php?action=warningComment&amp;id=<?=$comment['id'];?>">
-                <button type="submit" id="alarm" class="btn btn-warning ml-2 mb-3"
+                <button type="submit" id="alarm" class="postView-comment-btn"
                     onclick=" return confirm('Confirmez-vous le signalement ?')">
                     <i class="fas fa-bullhorn"></i>
                 </button>
             </a>
         </p>
-        <p class="content-comment text-dark bg-light border-bottom border-secondary ml-4 px-2 pb-4">
+        <p class="postView-third-p">
             <?=nl2br(htmlspecialchars($comment['comment']));?>
         </p>
         <?php
