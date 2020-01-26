@@ -9,7 +9,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  overflow: hidden;
   background-color: white;
   border-top: 2px solid orange;
   border-bottom: 2px solid orange;
@@ -26,7 +25,14 @@ ul {
 
 li {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar li {
+  height: 50px;
+  overflow: hidde;
+  transition: transform 0.5s linear;
 }
 
 .nav-link {
@@ -49,6 +55,17 @@ li {
 
 .underline-effect:hover::after {
   width: 100%;
+}
+
+#navbar li:hover {
+  color: orange;
+  transform: translateY(-50px);
+}
+
+.icon-navbar {
+  font-size: xx-large;
+  position: relative;
+  top: 10px;
 }
 
 /* frontend view */
