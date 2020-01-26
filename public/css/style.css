@@ -62,7 +62,7 @@ li {
 }
 
 .view-subtitle {
-  margin-top: 10px;
+  margin: 10px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,6 +98,11 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.first-section a{
+ text-decoration: none;
+ color: orange;
 }
 
 .view-image-size {
