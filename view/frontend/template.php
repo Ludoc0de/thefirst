@@ -26,6 +26,7 @@
                 </li>
                 <li>
                     <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
+                    <i class="fas fa-home icon-navbar"></i>
                 </li>
                 <li>
                     <a class="nav-link underline-effect" href="#">
