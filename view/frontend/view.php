@@ -1,19 +1,25 @@
 <?php $title = "Manger locale";?>
 
-<?php ob_start()?>
+<?php ob_start();
+
+    $images = [
+        "<img class='view-image-size' src=public/images/lune2.jpg>",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+    ];
+
+    for ($i = 0; $i < (count($images)-1); $i++) {
+        $images[$i];
+    }
+
+?>
 
 <section class="first-section">
     <?php
         while ($dataPosts = $posts->fetch()) {
-            $images = [
-                "<img class='view-image-size' src=public/images/lune2.jpg",
-                "2",
-                "3",
-                "4",
-                "5"
-            ];
-            
-            foreach($images as $image) {
     ?>
     <div class="first-div-section">
         <a class="" href="index.php?action=post&amp;id=<?=$dataPosts['id'];?>">
@@ -33,14 +39,11 @@
 
     </div>
     <div class="view-images">
-        <?= "$image <br>";?>
+        <?= $images[$i--];?>
     </div>
     <?php
         }
         $posts->closeCursor();
-    ?>
-    <?php
-    }
     ?>
 </section>
 
