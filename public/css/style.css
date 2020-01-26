@@ -100,9 +100,9 @@ li {
   justify-content: center;
 }
 
-.first-section a{
- text-decoration: none;
- color: orange;
+.first-section a {
+  text-decoration: none;
+  color: orange;
 }
 
 .view-image-size {
@@ -159,6 +159,12 @@ li {
 .postView-div {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+}
+
+.postView-div h2,
+.postView-h3 {
+  color: orangered;
 }
 
 .postView-form {
@@ -178,7 +184,7 @@ li {
 
 .postView-input:focus,
 .postView-textarea:focus {
-  box-shadow: 0px 2px 15px color: #172940;;
+  box-shadow: 0px 0px 8px orange;
 }
 
 .postView-input {
@@ -192,7 +198,7 @@ li {
 .postView-btn-input {
   border-radius: 10px;
   color: orange;
-  background-color:#172940;;
+  background-color: #172940;
   font-size: larger;
   height: 40px;
   width: 100%;
@@ -200,10 +206,11 @@ li {
 
 .postView-first-a {
   text-decoration: none;
+  color: #172940;
 }
 
 .postView-first-a:hover {
-  color: #172940;;
+  color: orange;
   font-size: large;
   transition: 0.25s linear;
   text-decoration: underline;
@@ -228,6 +235,6 @@ li {
   height: 30px;
   margin-left: 20px;
   padding-top: 10px;
-  border-bottom: 1px solid rgba(23, 41, 64, 0.5);
+  border-bottom: 1px solid orangered;
   background-color: white;
 }
