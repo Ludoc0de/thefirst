@@ -28,7 +28,7 @@
                 </li>
                 <li>
                     <span class="navbar-span-1">
-                        <i class="fas fa-home icon-navbar"></i>
+                        <i class="fas fa-home"></i>
                     </span>
                     <span class="navbar-span-2">
                         <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
@@ -36,7 +36,7 @@
                 </li>
                 <li>
                     <span class="navbar-span-1">
-                        <i class="fas fa-home icon-navbar"></i>
+                        <i class="fas fa-utensils"></i>
                     </span>
                     <span class="navbar-span-2">
                         <a class="nav-link underline-effect" href="#">
@@ -46,7 +46,7 @@
                 </li>
                 <li>
                     <span class="navbar-span-1">
-                        <i class="fas fa-home icon-navbar"></i>
+                        <i class="fas fa-mitten"></i>
                     </span>
                     <span class="navbar-span-2">
                         <a class="nav-link underline-effect" href="#">
@@ -59,7 +59,7 @@
                     ?>
                 <li>
                     <span class="navbar-span-1">
-                        <i class="fas fa-home icon-navbar"></i>
+                        <i class="fas fa-door-open"></i>
                     </span>
                     <span class="navbar-span-2">
                         <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
@@ -75,7 +75,7 @@
                         if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
                     ?>
                     <span class="navbar-span-1">
-                        <i class="fas fa-home icon-navbar"></i>
+                        <i class="fas fa-lock"></i>
                     </span>
                     <span class="navbar-span-2">
                         <a class="nav-link underline-effect" href="/thefirst/view/frontend/logout.php">
@@ -85,7 +85,7 @@
                         } else {
                     ?>
                         <span class="navbar-span-1">
-                            <i class="fas fa-home icon-navbar"></i>
+                            <i class="fas fa-lock-open"></i>
                         </span>
                         <span class="navbar-span-2">
                             <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
