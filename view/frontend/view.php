@@ -16,6 +16,9 @@
     }
 
 ?>
+<div class="view-subtitle">
+    <h2>Derniers articles</h2>
+</div>
 
 <section class="first-section">
     <?php
