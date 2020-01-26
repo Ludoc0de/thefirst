@@ -16,11 +16,18 @@
     }
 
 ?>
-<div class="view-subtitle">
-    <h2>Derniers articles</h2>
-    <div class="circle">
+
+<section class="title-section">
+    <div class="title">
+        <h1>Neographe: présente Guyane food !</h1>
+        <p>lets talk about food !</p>
     </div>
-</div>
+    <div class="view-subtitle">
+        <h2>Derniers articles</h2>
+        <div class="circle">
+        </div>
+    </div>
+</section>
 
 <section class="first-section">
     <?php
