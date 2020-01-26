@@ -18,6 +18,8 @@
 ?>
 <div class="view-subtitle">
     <h2>Derniers articles</h2>
+    <div class="circle">
+    </div>
 </div>
 
 <section class="first-section">
