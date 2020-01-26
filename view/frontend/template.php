@@ -13,10 +13,6 @@
 
 <body class="main-body">
     <header>
-        <div class="title">
-            <h1>Neographe: présente Guyane food !</h1>
-            <p>lets talk about food !</p>
-        </div>
         <div id="navbar">
             <ul>
                 <li>
