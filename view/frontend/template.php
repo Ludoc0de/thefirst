@@ -14,8 +14,8 @@
 <body class="main-body">
     <header>
         <div class="title">
-            <h2>Neographe first short !</h2>
-            <p>Talking about food !</p>
+            <h1>Neographe: présente Guyane food !</h1>
+            <p>lets talk about food !</p>
         </div>
         <div id="navbar">
             <ul>
