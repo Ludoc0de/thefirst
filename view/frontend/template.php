@@ -16,13 +16,15 @@
         <div id="navbar">
             <ul>
                 <li>
-                    <a class="nav-link">
-                        <?php
-                            if (isset($_SESSION['nickname'])) {
-                            echo "Bonjour " . $_SESSION['nickname'];
-                            }
-                        ?>
-                    </a>
+                    <span class="navbar-span-0">
+                        <a class="nav-link">
+                            <?php
+                                if (isset($_SESSION['nickname'])) {
+                                echo "Bonjour " . $_SESSION['nickname'];
+                                }
+                            ?>
+                        </a>
+                    </span>
                 </li>
                 <li>
                     <span class="navbar-span-1">
@@ -33,22 +35,37 @@
                     </span>
                 </li>
                 <li>
-                    <a class="nav-link underline-effect" href="#">
-                        On teste
-                    </a>
+                    <span class="navbar-span-1">
+                        <i class="fas fa-home icon-navbar"></i>
+                    </span>
+                    <span class="navbar-span-2">
+                        <a class="nav-link underline-effect" href="#">
+                            On teste
+                        </a>
+                    </span>
                 </li>
                 <li>
-                    <a class="nav-link underline-effect" href="#">
-                        La pratique
-                    </a>
+                    <span class="navbar-span-1">
+                        <i class="fas fa-home icon-navbar"></i>
+                    </span>
+                    <span class="navbar-span-2">
+                        <a class="nav-link underline-effect" href="#">
+                            La pratique
+                        </a>
+                    </span>
                 </li>
                 <?php
                         if (isset($_SESSION['nickname'])) {
                     ?>
                 <li>
-                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
-                        Administration
-                    </a>
+                    <span class="navbar-span-1">
+                        <i class="fas fa-home icon-navbar"></i>
+                    </span>
+                    <span class="navbar-span-2">
+                        <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
+                            Administration
+                        </a>
+                    </span>
                 </li>
                 <?php
                     }
@@ -57,18 +74,27 @@
                     <?php
                         if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
                     ?>
-                    <a class="nav-link underline-effect" href="/thefirst/view/frontend/logout.php">
-                        Se déconnecter
-                    </a>
-                    <?php
+                    <span class="navbar-span-1">
+                        <i class="fas fa-home icon-navbar"></i>
+                    </span>
+                    <span class="navbar-span-2">
+                        <a class="nav-link underline-effect" href="/thefirst/view/frontend/logout.php">
+                            Se déconnecter
+                        </a>
+                        <?php
                         } else {
                     ?>
-                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
-                        Se connecter
-                    </a>
-                    <?php
+                        <span class="navbar-span-1">
+                            <i class="fas fa-home icon-navbar"></i>
+                        </span>
+                        <span class="navbar-span-2">
+                            <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
+                                Se connecter
+                            </a>
+                            <?php
                         }
                     ?>
+                        </span>
                 </li>
             </ul>
         </div>
