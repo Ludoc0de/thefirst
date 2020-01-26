@@ -25,8 +25,12 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
-                    <i class="fas fa-home icon-navbar"></i>
+                    <span>
+                        <i class="fas fa-home icon-navbar"></i>
+                    </span>
+                    <span>
+                        <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
+                    </span>
                 </li>
                 <li>
                     <a class="nav-link underline-effect" href="#">
