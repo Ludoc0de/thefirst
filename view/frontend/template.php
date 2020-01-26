@@ -25,10 +25,10 @@
                     </a>
                 </li>
                 <li>
-                    <span>
+                    <span class="navbar-span-1">
                         <i class="fas fa-home icon-navbar"></i>
                     </span>
-                    <span>
+                    <span class="navbar-span-2">
                         <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
                     </span>
                 </li>
