@@ -38,6 +38,7 @@
     </p>
 </section>
 <section class="postView-section">
+    <button class="accordion">Voir commentaires</button>
     <div class="postView-comment-div">
         <?php
             while ($comment = $comments->fetch()) {
