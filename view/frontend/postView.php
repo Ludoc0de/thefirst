@@ -25,7 +25,7 @@
                 <textarea id="comment" class="postView-textarea" name="comment"></textarea>
             </div>
             <div>
-                <input type="submit" class="postView-btn-input"
+                <input type="submit" class="postView-btn-input" value="Envoyer"
                     onclick=" return confirm('Confirmez-vous l\'envois du commentaire ?')" />
             </div>
         </form>
