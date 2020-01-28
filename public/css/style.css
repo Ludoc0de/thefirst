@@ -256,6 +256,11 @@ li:hover .navbar-span-2 {
   font-size: medium;
   height: 25px;
   width: 35%;
+  float: right;
+}
+
+.postView-comment-div.is-open {
+  display: block;
 }
 
 .fa-plus {
@@ -265,6 +270,7 @@ li:hover .navbar-span-2 {
 .postView-comment-div {
   margin-top: 40px;
   margin-left: 20px;
+  display: none;
 }
 
 .fa-circle {
