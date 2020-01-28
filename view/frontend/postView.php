@@ -38,7 +38,10 @@
     </p>
 </section>
 <section class="postView-section">
-    <button class="accordion">Voir commentaires</button>
+    <button class="accordion">
+        Voir commentaires
+        <i class="fas fa-plus"></i>
+    </button>
     <div class="postView-comment-div">
         <?php
             while ($comment = $comments->fetch()) {
