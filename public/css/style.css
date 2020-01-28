@@ -249,6 +249,19 @@ li:hover .navbar-span-2 {
   text-decoration: underline;
 }
 
+.accordion {
+  border-radius: 10px;
+  color: orange;
+  background-color: #172940;
+  font-size: medium;
+  height: 25px;
+  width: 35%;
+}
+
+.fa-plus {
+  margin-left: 10px;
+}
+
 .postView-comment-div {
   margin-top: 40px;
   margin-left: 20px;
