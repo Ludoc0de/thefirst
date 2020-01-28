@@ -132,6 +132,7 @@
     <!-- script -->
     <script src="/thefirst/public/js/main.js"></script>
     <script src="/thefirst/public/js/slider.js"></script>
+    <script src="/thefirst/public/js/accordion.js"></script>
 </body>
 
 </html>
