@@ -16,7 +16,7 @@
         <div id="navbar">
             <ul>
                 <li class="navbar-li">
-                    <span class="navbar-span-0">
+                    <span class="navbar-span-1">
                         <a class="nav-link">
                             <?php
                                 if (isset($_SESSION['nickname'])) {
