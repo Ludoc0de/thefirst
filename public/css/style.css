@@ -245,8 +245,7 @@ li:hover .navbar-span-2 {
   width: 35%;
 }
 
-.postView-comment-div.is-open {
-  display: block;
+.is-open {
 }
 
 .fa-plus {
@@ -256,7 +255,6 @@ li:hover .navbar-span-2 {
 .postView-comment-div {
   margin-top: 40px;
   margin-left: 20px;
-  display: none;
 }
 
 .fa-circle {
