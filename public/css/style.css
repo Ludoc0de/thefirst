@@ -251,12 +251,13 @@ li:hover .navbar-span-2 {
   transition: 0.5s linear;
 }
 
-.fa-plus {
+.fa-plus,
+.fa-minus {
   margin-left: 10px;
 }
 
 .postView-comment-div {
-  margin-top: 40px;
+  margin-top: 15px;
   margin-left: 20px;
   height: 0;
   transition: height 0.5s linear;
