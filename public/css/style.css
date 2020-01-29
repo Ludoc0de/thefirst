@@ -45,15 +45,6 @@ li {
   text-decoration: none;
 }
 
-.navbar-span-0 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: orange;
-}
-
 .navbar-span-1 {
   display: flex;
   justify-content: center;
