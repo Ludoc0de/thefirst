@@ -8,10 +8,10 @@ class moveEffect {
     }
 
     navbarChange() {
-        if (this.window.pageYOffset >= this.navbar) {
-            this.navbar.style.("sticky")
+        if (document.documentElement.scrollTop > 50) {
+            navbarLi.classList.add("shrink");
         } else {
-            this.navbar.classList.remove("sticky");
+            navbarLi.classList.remove("shrink");
         }
     }
 }
