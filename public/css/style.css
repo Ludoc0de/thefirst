@@ -255,6 +255,9 @@ li:hover .navbar-span-2 {
 .postView-comment-div {
   margin-top: 40px;
   margin-left: 20px;
+  height: 0;
+  transition: height 1s linear;
+  overflow: hidden;
 }
 
 .fa-circle {
