@@ -33,10 +33,10 @@
         ?>
         <p>Page de connexion :</p>
         <div>
-            <input class="form-control" type="text" name="nickname" placeholder="nom d'utilisateur">
-            <input class="form-control" type="password" name="pass" placeholder="mot de passe">
+            <input class="login-input" type="text" name="nickname" placeholder="nom d'utilisateur">
+            <input class="login-input" type="password" name="pass" placeholder="mot de passe">
         </div>
-        <button type="submit" class="btn btn-dark button-login"> Se connecter</button>
+        <button type="submit" class="login-btn"> Se connecter</button>
     </form>
 </section>
 
