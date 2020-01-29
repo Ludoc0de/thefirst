@@ -9,6 +9,8 @@ class moveEffect {
 
         //listener
         this.window.addEventListener("scroll", this.navbarChange.bind(this));
+
+        this.accordion.addEventListener("click", this.commentOpen.bind(this));
     }
 
     navbarChange() {
