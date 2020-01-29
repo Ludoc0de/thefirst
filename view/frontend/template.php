@@ -15,7 +15,7 @@
     <header>
         <div id="navbar">
             <ul>
-                <li>
+                <li class="navbar-li">
                     <span class="navbar-span-0">
                         <a class="nav-link">
                             <?php
@@ -26,7 +26,7 @@
                         </a>
                     </span>
                 </li>
-                <li>
+                <li class="navbar-li">
                     <span class="navbar-span-1">
                         <i class="fas fa-home"></i>
                     </span>
@@ -34,7 +34,7 @@
                         <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
                     </span>
                 </li>
-                <li>
+                <li class="navbar-li">
                     <span class="navbar-span-1">
                         <i class="fas fa-utensils"></i>
                     </span>
@@ -43,7 +43,7 @@
                             On teste
                         </a>
                     </span>
-                </li>
+                </li class="navbar-li">
                 <li>
                     <span class="navbar-span-1">
                         <i class="fas fa-mitten"></i>
@@ -57,7 +57,7 @@
                 <?php
                         if (isset($_SESSION['nickname'])) {
                     ?>
-                <li>
+                <li class="navbar-li">
                     <span class="navbar-span-1">
                         <i class="fas fa-door-open"></i>
                     </span>
@@ -70,7 +70,7 @@
                 <?php
                     }
                     ?>
-                <li>
+                <li class="navbar-li">
                     <?php
                         if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
                     ?>
