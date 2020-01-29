@@ -18,7 +18,7 @@
 .shrink {
   width: 130px;
   height: 40px;
-  background-color: #000;
+  transition: 0.5s ease;
 }
 
 ul {
@@ -34,6 +34,7 @@ li {
   width: 140px;
   height: 50px;
   overflow: hidden;
+  transition: 0.5s ease;
 }
 
 .nav-link {
