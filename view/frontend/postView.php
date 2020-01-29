@@ -31,11 +31,6 @@
         </form>
     </div>
 
-    <p class="postView-first-p">
-        <a href="index.php" class="postView-first-a">
-            Retour à l'accueil
-        </a>
-    </p>
 </section>
 <section class="postView-section">
     <button class="accordion">
