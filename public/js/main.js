@@ -3,6 +3,9 @@ class moveEffect {
         this.navbarLi = document.getElementsByClassName("navbar-li");
         this.window = window;
         this.navbarColors = document.getElementsByClassName("navbar-span-1");
+        this.accordion = document.getElementsByClassName(".accordion");
+        this.postView = document.getElementsByClassName(".postView-comment-div");
+        this.minus = document.querySelector(".fa-plus");
 
         //listener
         this.window.addEventListener("scroll", this.navbarChange.bind(this));
