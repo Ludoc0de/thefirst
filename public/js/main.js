@@ -3,7 +3,6 @@ class moveEffect {
         this.navbarLi = document.getElementsByClassName("navbar-li");
         this.window = window;
         this.navbarColors = document.getElementsByClassName("navbar-span-1");
-        console.log(this.navbarColor);
 
         //listener
         this.window.addEventListener("scroll", this.navbarChange.bind(this));
