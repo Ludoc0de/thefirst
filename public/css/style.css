@@ -237,18 +237,6 @@ li:hover .navbar-span-2 {
   width: 100%;
 }
 
-.postView-first-a {
-  text-decoration: none;
-  color: #172940;
-}
-
-.postView-first-a:hover {
-  color: orange;
-  font-size: large;
-  transition: 0.25s linear;
-  text-decoration: underline;
-}
-
 .accordion {
   border-radius: 10px;
   color: orange;
