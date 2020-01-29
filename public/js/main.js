@@ -1,6 +1,6 @@
 class moveEffect {
     constructor() {
-        this.navbar = navbar;
+        this.navbarLi = document.getElementsByClassName("navbar-li");
         this.window = window;
 
         //listener
