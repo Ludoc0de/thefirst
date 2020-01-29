@@ -44,7 +44,7 @@
                         </a>
                     </span>
                 </li class="navbar-li">
-                <li>
+                <li class="navbar-li">
                     <span class="navbar-span-1">
                         <i class="fas fa-mitten"></i>
                     </span>
