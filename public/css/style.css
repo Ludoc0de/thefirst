@@ -15,17 +15,23 @@
   z-index: 100;
 }
 
+.shrink {
+  width: 130px;
+  height: 40px;
+  background-color: #000;
+}
+
 ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 li {
-  width: 136px;
+  width: 140px;
   height: 50px;
   overflow: hidden;
 }
