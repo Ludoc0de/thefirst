@@ -1,5 +1,5 @@
 class moveEffect {
-    constructor(navbar) {
+    constructor() {
         this.navbar = navbar;
         this.window = window;
 
@@ -16,6 +16,4 @@ class moveEffect {
     }
 }
 
-const navbar = document.getElementById("navbar");
-
-const move = new moveEffect(navbar);
+const move = new moveEffect();
