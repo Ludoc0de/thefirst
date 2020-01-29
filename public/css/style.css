@@ -246,6 +246,8 @@ li:hover .navbar-span-2 {
 }
 
 .is-open {
+  color: orangered;
+  transition: 1s linear;
 }
 
 .fa-plus {
