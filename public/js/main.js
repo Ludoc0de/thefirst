@@ -4,14 +4,16 @@ class moveEffect {
         this.window = window;
 
         //listener
-        this.window.addEventListener("scroll", navbarChange.bind(this));
+        this.window.addEventListener("scroll", this.navbarChange.bind(this));
     }
 
     navbarChange() {
-        if (document.documentElement.scrollTop > 50) {
-            navbarLi.classList.add("shrink");
-        } else {
-            navbarLi.classList.remove("shrink");
+        for (let navbarLi of this.navbarLi) {
+            if (document.documentElement.scrollTop > 50) {
+                navbarLi.classList.add("shrink");
+            } else {
+                navbarLi.classList.remove("shrink");
+            }
         }
     }
 }
