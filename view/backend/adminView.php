@@ -6,26 +6,28 @@
     if (isset($_SESSION['nickname'])) {
 ?>
 
-<section class="pt-5">
-    <div class="row bg-dark text-light rounded">
-        <h1 class="mx-auto px-5 my-1">Selectionner votre action</h1>
+<section class="adminView-section">
+    <div class="adminView-title">
+        <h1>Selectionner votre action</h1>
     </div>
-    <ul class="nav flex-column">
-        <li class="nav-item">
-            <h2>
-                <a class="nav-link text-dark" href="index.php?action=createPost">
-                    Creer un chapitre
-                </a>
-            </h2>
-        </li>
-        <li class="nav-item">
-            <h2>
-                <a class="nav-link text-dark" href="index.php?action=erasePost">
-                    administrer les billets
-                </a>
-            </h2>
-        </li>
-    </ul>
+    <div class="adminView-content">
+        <ul class="adminView-content-ul">
+            <li>
+                <h2>
+                    <a class="content-a" href="index.php?action=createPost">
+                        Creer un article
+                    </a>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    <a class="content-a" href="index.php?action=erasePost">
+                        administrer les billets
+                    </a>
+                </h2>
+            </li>
+        </ul>
+    </div>
 </section>
 
 <?php
