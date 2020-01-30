@@ -2,22 +2,24 @@
 
 <?php ob_start();?>
 
-<section class="mx-auto pt-5">
-    <div class="row bg-dark text-light rounded">
-        <h1 class="mx-auto px-5 my-1">Creer un chapitre</h1>
+<section class="createPost-section">
+    <div class="createPost-first-div">
+        <h1 class="mx-auto px-5 my-1">
+            Creer un article
+        </h1>
     </div>
-    <div class="row">
-        <form action="index.php?action=addPost" class="col-lg-8 mx-auto" method="post">
-            <div class="form-group mt-3">
+    <div class="createPost-second-div">
+        <form action="index.php?action=addPost" class="createPost-form" method="post">
+            <div>
                 <label for="title">Titre</label><br>
-                <input type="text" id="title" class="bg-light form-control" name="title" />
-            </div>
-            <div class="form-group mx-auto">
-                <label for="newPost">Contenu</label><br>
-                <textarea id="newPost" class="bg-light form-control" name="content" rows="5"></textarea>
+                <input class="createPost-input" type="text" id="title" name="title" />
             </div>
             <div>
-                <input type="submit" id="submit" class="btn btn-dark mt-1" />
+                <label for="newPost">Contenu</label><br>
+                <textarea class="createPost-input" name="content" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="submit" class="createPost-button" />
             </div>
         </form>
     </div>
