@@ -114,27 +114,32 @@ li:hover .navbar-span-2 {
   transition: 0.5s linear;
 }
 
-/*creat post*/
+/*creatPost updatePost*/
 
-.createPost-section {
+.createPost-section,
+.updatePost-section {
   width: 600px;
   margin: auto;
 }
 
-.createPost-first-div {
+.createPost-first-div,
+.updatePost-first-div {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
 }
 
-.createPost-form {
+.createPost-form,
+.updatePost-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .createPost-input,
-.createPost-textarea {
+.createPost-textarea,
+.updatePost-input,
+.updatePost-textarea {
   width: 100%;
   margin: 15px 0px;
   border-radius: 5px;
@@ -143,19 +148,24 @@ li:hover .navbar-span-2 {
 }
 
 .createPost-input:focus,
-.createPost-textarea:focus {
+.createPost-textarea:focus,
+.updatePost-input:focus,
+.updatePost-textarea:focus {
   box-shadow: 0px 0px 8px orange;
 }
 
-.createPost-input {
+.createPost-input,
+.updatePost-input {
   height: 25px;
 }
 
-.createPost-textarea {
+.createPost-textarea,
+.updatePost-textarea {
   height: 80px;
 }
 
-.createPost-button {
+.createPost-button,
+.updatePost-button {
   border-radius: 10px;
   color: orange;
   background-color: #172940;
