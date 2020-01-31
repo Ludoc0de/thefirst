@@ -37,7 +37,7 @@ class CommentManager extends Manager
     {
         $db = $this->dbConnect();
 
-        $signal = $db->prepare('UPDATE comments SET warning=warning+1 WHERE id=?');
+        $signal = $db->prepare('UPDATE comments SET warning=true WHERE id=?');
         $warningComment = $signal->execute(array($warning));
 
         return $warningComment;
