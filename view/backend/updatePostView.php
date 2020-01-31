@@ -6,19 +6,17 @@
     if (isset($_SESSION['nickname'])) {
 ?>
 
-<section class="pt-5">
-    <div class="row bg-dark text-light rounded">
+<section class="updatePost-section">
+    <div>
         <h1 class="mx-auto">Modifier les chapitres</h1>
     </div>
-    <form action="index.php?action=updatePost&amp;id=<?=$post['id'];?>" class="col-lg-8 mx-auto" method="post">
-        <div class="form-group mt-3">
+    <form action="index.php?action=updatePost&amp;id=<?=$post['id'];?>" method="post">
+        <div class="updatePost-form">
             <label for="title">Titre</label><br>
-            <input type="text" id="title" name="title" class="bg-light form-control" value="<?=$post['title'];?>" />
-        </div>
-        <div class="form-group mx-auto">
+            <input type="text" id="title" name="title" class="updatePost-input" value="<?=$post['title'];?>" />
+            <br>
             <label for="newPost">Contenu</label><br>
-            <textarea id="newPost" class="bg-light form-control" name="content"
-                rows="5"><?=$post['content'];?></textarea>
+            <textarea id="newPost" class="updatePost-textarea" name="content" rows="5"><?=$post['content'];?></textarea>
         </div>
         <div>
             <input type="submit" class="btn btn-dark mt-1" value="Modifier"
