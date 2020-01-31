@@ -6,41 +6,40 @@
     if (isset($_SESSION['nickname'])) {
 ?>
 
-<section class="">
-    <div class="">
+<section class="managePost-first-section">
+    <div>
         <h1>Administrer les chapitres</h1>
     </div>
-    <div class="">
+    <div class="managePost-first-div">
         <?php
-        while ($dataPosts = $posts->fetch()) {
-    ?>
-        <div class="">
-            <div>
-                <h2 class="">
-                    <?=htmlspecialchars($dataPosts['title']);?>
-                </h2>
-                <p class="">
-                    <br>le <?=$dataPosts['creation_date_fr'];?>
-                </p>
-            </div>
-            <div>
-                <a class="" href="index.php?action=updatePostView&amp;id=<?=$dataPosts['id'];?>">
-                    Modifier chapitre
-                </a>
-            </div>
-            <div>
-                <a class="" href="index.php?action=moderateCommentView&amp;id=<?=$dataPosts['id'];?>">
-                    Modérer commentaire
-                </a>
-            </div>
-            <div>
-                <a class="" href="index.php?action=deletePost&amp;id=<?=$dataPosts['id'];?>"
-                    onclick="return confirm('attention suppression définitive !')">
-                    Supprimer ?
-                </a>
-            </div>
+            while ($dataPosts = $posts->fetch()) {
+        ?>
+        <div>
+            <h2>
+                <?=htmlspecialchars($dataPosts['title']);?>
+            </h2>
+            <p>
+                <br>le <?=$dataPosts['creation_date_fr'];?>
+            </p>
         </div>
-        <?php
+        <div>
+            <a class="managePost-a" href="index.php?action=updatePostView&amp;id=<?=$dataPosts['id'];?>">
+                Modifier chapitre
+            </a>
+        </div>
+        <div>
+            <a class="managePost-first-" href="index.php?action=moderateCommentView&amp;id=<?=$dataPosts['id'];?>">
+                Modérer commentaire
+            </a>
+        </div>
+        <div>
+            <a class="managePost-first-" href="index.php?action=deletePost&amp;id=<?=$dataPosts['id'];?>"
+                onclick="return confirm('attention suppression définitive !')">
+                Supprimer ?
+            </a>
+        </div>
+    </div>
+    <?php
         }
         $posts->closeCursor();
     ?>
