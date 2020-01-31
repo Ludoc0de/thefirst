@@ -56,7 +56,7 @@
     <?php
         }
     ?>
-    <p class="mt-1">
+    <p>
         <a href="index.php?action=erasePost" class="tag-return">Retour</a>
     </p>
 </section>
