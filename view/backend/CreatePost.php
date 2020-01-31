@@ -4,7 +4,7 @@
 
 <section class="createPost-section">
     <div class="createPost-first-div">
-        <h1 class="mx-auto px-5 my-1">
+        <h1>
             Creer un article
         </h1>
 
