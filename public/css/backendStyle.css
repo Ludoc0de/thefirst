@@ -163,3 +163,24 @@ li:hover .navbar-span-2 {
   height: 40px;
   width: 100%;
 }
+
+/*managePost*/
+
+.managePost-first-section {
+  margin-top: 10em;
+}
+
+.managePost-content-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.managePost-div {
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  padding-left: 20px;
+  margin: 50px 35px;
+  border-radius: 10px;
+}
