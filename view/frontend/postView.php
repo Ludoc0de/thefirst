@@ -61,7 +61,7 @@
         ?>
         <p class="warning-comment">
             Cet auteur a été signalé
-            <span class="test"></span>
+            <span class="warning-underline"></span>
         </p>
         <?php
             };
