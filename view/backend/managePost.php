@@ -10,40 +10,35 @@
     <div>
         <h1>Administrer les chapitres</h1>
     </div>
-    <div class="managePost-first-div">
-        <?php
+    <?php
             while ($dataPosts = $posts->fetch()) {
         ?>
-        <div>
+    <div class="managePost-content-div">
+        <div class="managePost-div">
             <h2>
                 <?=htmlspecialchars($dataPosts['title']);?>
             </h2>
             <p>
                 <br>le <?=$dataPosts['creation_date_fr'];?>
             </p>
-        </div>
-        <div>
             <a class="managePost-a" href="index.php?action=updatePostView&amp;id=<?=$dataPosts['id'];?>">
                 Modifier chapitre
             </a>
-        </div>
-        <div>
+            <br>
             <a class="managePost-first-" href="index.php?action=moderateCommentView&amp;id=<?=$dataPosts['id'];?>">
                 Modérer commentaire
             </a>
-        </div>
-        <div>
+            <br>
             <a class="managePost-first-" href="index.php?action=deletePost&amp;id=<?=$dataPosts['id'];?>"
                 onclick="return confirm('attention suppression définitive !')">
                 Supprimer ?
             </a>
         </div>
-    </div>
-    <?php
+        <div>
+            <?php
         }
         $posts->closeCursor();
     ?>
-    </div>
 </section>
 
 <section>
