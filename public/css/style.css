@@ -290,10 +290,24 @@ li:hover .navbar-span-2 {
 }
 
 .warning-comment {
-  background: linear-gradient(to left, orangered, orange);
   font-weight: bold;
   text-align: center;
   width: 165px;
+}
+
+.warning-underline {
+  position: relative;
+  bottom: 6px;
+  margin-bottom: 0px;
+  display: block;
+  content: "";
+  width: 165px;
+  height: 6px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 69, 0, 0.4),
+    rgba(255, 165, 0, 0.4)
+  );
 }
 
 /*login section*/
