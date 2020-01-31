@@ -56,10 +56,10 @@
     <?php
         }
     ?>
+    <p class="mt-1">
+        <a href="index.php?action=erasePost" class="tag-return">Retour</a>
+    </p>
 </section>
-<p class="mt-1">
-    <a href="index.php?action=erasePost" class="text-dark">Retour</a>
-</p>
 <?php
     }
 ?>
