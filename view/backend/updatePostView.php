@@ -28,7 +28,7 @@
         </form>
     </div>
     <p>
-        <a href="index.php?action=erasePost" class="update-return">Retour</a>
+        <a href="index.php?action=erasePost" class="tag-return">Retour</a>
     </p>
 </section>
 
