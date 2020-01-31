@@ -7,13 +7,14 @@
 ?>
 
 <section class="managePost-first-section">
-    <div>
+    <div class="managePost-h1">
         <h1>Administrer les chapitres</h1>
     </div>
-    <?php
+    <div class=" managePost-content-div">
+        <?php
             while ($dataPosts = $posts->fetch()) {
         ?>
-    <div class="managePost-content-div">
+
         <div class="managePost-div">
             <h2>
                 <?=htmlspecialchars($dataPosts['title']);?>
@@ -34,11 +35,11 @@
                 Supprimer ?
             </a>
         </div>
-        <div>
-            <?php
+        <?php
         }
         $posts->closeCursor();
     ?>
+    </div>
 </section>
 
 <section>
