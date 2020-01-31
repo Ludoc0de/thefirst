@@ -59,7 +59,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
   width: 100%;
   background-color: white;
   transition: 0.3s ease-out;
