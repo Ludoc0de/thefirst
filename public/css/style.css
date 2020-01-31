@@ -282,6 +282,13 @@ li:hover .navbar-span-2 {
   background-color: white;
 }
 
+.warning-comment {
+  background: linear-gradient(to left, orangered, orange);
+  font-weight: bold;
+  text-align: center;
+  width: 165px;
+}
+
 /*login section*/
 
 .login-section {
