@@ -27,8 +27,8 @@
             </div>
         </form>
     </div>
-    <p class="col-lg-8 mx-auto">
-        <a href="index.php?action=erasePost" class="text-dark">Retour</a>
+    <p>
+        <a href="index.php?action=erasePost" class="update-return">Retour</a>
     </p>
 </section>
 
