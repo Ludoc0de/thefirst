@@ -6,36 +6,35 @@
     if (isset($_SESSION['nickname'])) {
 ?>
 
-<section class="pt-5">
-    <div class="row bg-dark text-light rounded">
-        <h1 class="mx-auto">Administrer les chapitres</h1>
+<section class="">
+    <div class="">
+        <h1>Administrer les chapitres</h1>
     </div>
-    <div class="row">
+    <div class="">
         <?php
         while ($dataPosts = $posts->fetch()) {
     ?>
-        <div class="col-lg-4 rounded border border-dark bg-white">
+        <div class="">
             <div>
-                <h2 class="text-dark">
+                <h2 class="">
                     <?=htmlspecialchars($dataPosts['title']);?>
                 </h2>
-                <p class="text-black-50">
+                <p class="">
                     <br>le <?=$dataPosts['creation_date_fr'];?>
                 </p>
             </div>
             <div>
-                <a class="text-info text-dark" href="index.php?action=updatePostView&amp;id=<?=$dataPosts['id'];?>">
+                <a class="" href="index.php?action=updatePostView&amp;id=<?=$dataPosts['id'];?>">
                     Modifier chapitre
                 </a>
             </div>
             <div>
-                <a class="text-info text-dark"
-                    href="index.php?action=moderateCommentView&amp;id=<?=$dataPosts['id'];?>">
+                <a class="" href="index.php?action=moderateCommentView&amp;id=<?=$dataPosts['id'];?>">
                     Modérer commentaire
                 </a>
             </div>
             <div>
-                <a class="text-danger" href="index.php?action=deletePost&amp;id=<?=$dataPosts['id'];?>"
+                <a class="" href="index.php?action=deletePost&amp;id=<?=$dataPosts['id'];?>"
                     onclick="return confirm('attention suppression définitive !')">
                     Supprimer ?
                 </a>
@@ -49,17 +48,17 @@
 </section>
 
 <section>
-    <div class="row justify-content-end">
-        <h3 class="col-lg-4 text-right text-dark border-h3 border-warning mt-3">
+    <div class="">
+        <h3 class="">
             Commentaire signalé dans :
         </h3>
     </div>
-    <p class="text-right text-dark">
+    <p class="">
         <?php
         while ($seeWarning = $seeWarningComment->fetch()) {
             if ($seeWarning['total'] > 0) {
         ?>
-        <i class="fas fa-circle text-warning border rounded border-dark"></i>
+        <i class="fas fa-circle"></i>
         <?=$seeWarning['title'];?>
         <br>
         <?php
