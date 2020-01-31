@@ -26,11 +26,11 @@
                 Modifier chapitre
             </a>
             <br>
-            <a class="managePost-first-" href="index.php?action=moderateCommentView&amp;id=<?=$dataPosts['id'];?>">
+            <a class="managePost-a" href="index.php?action=moderateCommentView&amp;id=<?=$dataPosts['id'];?>">
                 Modérer commentaire
             </a>
             <br>
-            <a class="managePost-first-" href="index.php?action=deletePost&amp;id=<?=$dataPosts['id'];?>"
+            <a class="managePost-a" href="index.php?action=deletePost&amp;id=<?=$dataPosts['id'];?>"
                 onclick="return confirm('attention suppression définitive !')">
                 Supprimer ?
             </a>
