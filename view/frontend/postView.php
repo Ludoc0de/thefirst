@@ -55,6 +55,15 @@
                     <i class="fas fa-bullhorn"></i>
                 </button>
             </a>
+            <?php
+                if (($comment['warning']) > 0) {
+            ?>
+            <p class="warning-comment">
+                Cet auteur a été signalé
+            </p>
+            <?php
+                }
+            ?>
         </p>
         <p class="postView-third-p">
             <?=nl2br(htmlspecialchars($comment['comment']));?>
