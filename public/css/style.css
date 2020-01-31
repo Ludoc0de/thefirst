@@ -283,6 +283,7 @@ li:hover .navbar-span-2 {
 
 .postView-third-p {
   height: 30px;
+  margin-top: -10px;
   margin-left: 20px;
   padding-top: 10px;
   border-bottom: 1px solid orangered;
@@ -298,7 +299,6 @@ li:hover .navbar-span-2 {
 .warning-underline {
   position: relative;
   bottom: 6px;
-  margin-bottom: 0px;
   display: block;
   content: "";
   width: 165px;
