@@ -381,24 +381,24 @@ li:hover .navbar-span-2 {
     0% {
       width: 50px;
       height: 50px;
-      background-colo: rgba(0, 0, 0, 0.5);
+      background-colo: rgba(23, 41, 64, 0.5);
     }
     50% {
       width: 0px;
       height: 0px;
-      background-color: rgba(0, 0, 0, 0);
+      background-color: rgba(23, 41, 64, 0);
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 50px solid rgba(0, 0, 0, 1);
+      border-left: 50px solid rgba(23, 41, 64, 1);
     }
     100% {
       width: 0px;
       height: 0px;
-      background-color: rgba(0, 0, 0, 0);
+      background-color: rgba(23, 41, 64, 0);
       border-radius: 0px;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 50px solid rgba(0, 0, 0, 1);
+      border-left: 50px solid rgba(23, 41, 64, 1);
       transform: rotate(90deg);
       box-shadow: none;
     }
