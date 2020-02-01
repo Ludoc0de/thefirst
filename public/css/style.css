@@ -81,6 +81,7 @@ li:hover .navbar-span-2 {
 .underline-effect:hover::after {
   width: 100%;
 }
+
 #buttonMenu {
   display: none;
 }
@@ -113,32 +114,6 @@ li:hover .navbar-span-2 {
     rgba(255, 69, 0, 0.4),
     rgba(255, 165, 0, 0.4)
   );
-}
-
-.circle {
-  width: 10px;
-  height: 10px;
-  background: orange;
-  border-radius: 50%;
-  border: 1px solid orangered;
-}
-
-.circle::after {
-  position: absolute;
-  width: 85px;
-  height: 4px;
-  content: "";
-  border-bottom: 1px solid orangered;
-  margin-left: 11px;
-}
-
-.circle::before {
-  position: absolute;
-  width: 85px;
-  height: 4px;
-  content: "";
-  border-bottom: 1px solid orangered;
-  margin-left: -86px;
 }
 
 .first-section {
