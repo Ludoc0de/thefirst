@@ -3,7 +3,7 @@ class formLoginCheck {
 
         this.user = document.getElementById("login-pseudo");
         this.helpUser = document.getElementById("helpUser");
-        console.log(this.helpUser);
+        console.log(this.user);
         this.pass = document.getElementById("login-pass");
         this.helpPass = document.getElementById("helpPass");
         this.loginButton = document.querySelector(".login-button");
@@ -15,6 +15,17 @@ class formLoginCheck {
 
     }
 
+    checkedLogin() {
+        if ((this.user.value == "") || (this.pass.value == "")) {
+            this.helpUser.textContent = " : Renseigner le formulaire";
+            this.helpUser.style.color = "orangered";
+            this.loginButton.textContent = "Renseigner le formulaire";
+
+        } else {
+            this.loginButton.textContent = "Se connecter";
+            this.loginButton.type = "submit";
+        }
+    }
 
 }
 
