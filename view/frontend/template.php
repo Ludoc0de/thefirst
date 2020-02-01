@@ -98,6 +98,9 @@
                 </li>
             </ul>
         </div>
+        <button id="buttonMenu">
+            <div id="burger"></div>
+        </button>
     </header>
 
     <?=$content?>
