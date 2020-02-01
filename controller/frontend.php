@@ -37,14 +37,13 @@ function addComment($postId, $author, $comment)
 //verify member
 function loginPage()
 {
-    $loginMessage = null;
-
+   
     if (!empty($_POST['nickname']) && !empty($_POST['pass'])) {
         checkLogin($_POST['nickname'], $_POST['pass']);
-        $loginMessage = "identifiant ou mot de passe incorrect";
+        throw new Exception("identifiant ou mot de passe incorrect");
 
     } elseif (isset($_POST['nickname']) || isset($_POST['pass'])) {
-        $loginMessage = "merci de renseigner tous les champs";
+        throw new Exception("merci de renseigner tous les champs");
     }
 
     require 'view\frontend\login.php';
