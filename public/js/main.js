@@ -7,9 +7,13 @@ class moveEffect {
         this.postView = document.querySelector(".postView-comment-div");
         this.minus = document.querySelector(".fa-plus");
 
+        this.getBurger = document.querySelector("#burger");
+
         //listener
         this.window.addEventListener("scroll", this.navbarChange.bind(this));
         this.accordion.addEventListener("click", this.commentOpen.bind(this));
+
+        this.getBurger.addEventListener("click", this.openMenu.bind(this));
     }
 
     navbarChange() {
@@ -42,6 +46,10 @@ class moveEffect {
             this.minus.classList.remove("fa-minus");
             this.minus.classList.add("fa-plus");
         }
+    }
+
+    openMenu() {
+        console.log('test');
     }
 
 }
