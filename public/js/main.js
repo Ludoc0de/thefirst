@@ -10,10 +10,11 @@ class moveEffect {
         this.getBurger = document.querySelector("#burger");
 
         //listener
+        this.getBurger.addEventListener("click", this.openMenu.bind(this));
         this.window.addEventListener("scroll", this.navbarChange.bind(this));
         this.accordion.addEventListener("click", this.commentOpen.bind(this));
 
-        this.getBurger.addEventListener("click", this.openMenu.bind(this));
+
     }
 
     navbarChange() {
@@ -50,6 +51,7 @@ class moveEffect {
 
     openMenu() {
         console.log('test');
+        this.getBurger.classList.toggle('animate');
     }
 
 }
