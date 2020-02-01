@@ -99,6 +99,20 @@ li:hover .navbar-span-2 {
   align-items: center;
 }
 
+.view-subtitle-underline {
+  position: relative;
+  bottom: 30px;
+  display: block;
+  content: "";
+  width: 180px;
+  height: 8px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 69, 0, 0.4),
+    rgba(255, 165, 0, 0.4)
+  );
+}
+
 .circle {
   width: 10px;
   height: 10px;
