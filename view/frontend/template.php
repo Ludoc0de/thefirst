@@ -109,10 +109,9 @@
                     </a>
                 </div>
                 <div class="bar3">
-                    <span class="navbar-span-2">
-                        <a class="nav-link underline-effect" href="#">
-                            La pratique
-                        </a>
+                    <a class="nav-link underline-effect" href="#">
+                        La pratique
+                    </a>
                 </div>
                 <div class="bar4">
                     <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
