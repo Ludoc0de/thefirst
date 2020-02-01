@@ -52,7 +52,7 @@
     <p class="managePost-second-section-p">
         <?php
         while ($seeWarning = $seeWarningComment->fetch()) {
-            if ($seeWarning['total'] > 0) {
+            if ($seeWarning['warning'] > 0) {
         ?>
         <i class="fas fa-circle"></i>
         <?=$seeWarning['title'];?>
