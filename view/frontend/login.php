@@ -21,7 +21,13 @@
     <form class="login-form" action="/thefirst/index.php?action=loginPage" method="post">
         <p>Se connecter ? C'est ici !</p>
         <div>
+            <label for="pseudo">Pseudo
+                <span id="helpUser"></span>
+            </label>
             <input id="login-pseudo" class="login-input" type="text" name="nickname" placeholder="nom d'utilisateur">
+            <label for="password">Mot de pass
+                <span id="helpPass"></span>
+            </label>
             <input id="login-pass" class="login-input" type="password" name="pass" placeholder="mot de passe">
         </div>
         <button type="submit" class="login-button"> Se connecter</button>
