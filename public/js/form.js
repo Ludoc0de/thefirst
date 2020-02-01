@@ -1,4 +1,4 @@
-class formCommentCheck {
+class formCheck {
     constructor() {
         this.helpAuthor = document.getElementById("helpAuthor");
         this.author = document.getElementById("author");
@@ -8,10 +8,21 @@ class formCommentCheck {
         this.postViewButton = document.querySelector(".postView-btn-input");
         this.regex = /(^[A-Z]{1}[a-z]{2,}|^[A-Z]?[a-z]{3,})\d{0,2}$/;
 
+        this.user = document.getElementById("login-pseudo");
+        this.helpUser = document.getElementById("helpUser");
+        console.log(this.helpUser);
+        this.pass = document.getElementById("login-pass");
+        this.helpPass = document.getElementById("helpPass");
+        this.loginButton = document.querySelector(".login-button");
+
         //listener
         this.author.addEventListener('input', this.checkedComment.bind(this));
         this.textarea.addEventListener('input', this.checkedComment.bind(this));
         this.postViewButton.addEventListener('click', this.checkedComment.bind(this));
+
+        this.user.addEventListener('input', this.checkedLogin.bind(this));
+        this.pass.addEventListener('input', this.checkedLogin.bind(this));
+        this.loginButton.addEventListener('click', this.checkedLogin.bind(this));
 
     }
 
@@ -45,6 +56,13 @@ class formCommentCheck {
 
     }
 
+    checkedLogin() {
+
+        if (1 < 2) {
+            console.log('lol');
+        }
+
+    }
 }
 
-const formComment = new formCommentCheck();
+const form = new formCheck();
