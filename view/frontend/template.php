@@ -131,7 +131,8 @@
     -->
     <!-- script -->
     <script src="/thefirst/public/js/main.js"></script>
-    <script src="/thefirst/public/js/form.js"></script>
+    <script src="/thefirst/public/js/formComment.js"></script>
+    <script src="/thefirst/public/js/formLogin.js"></script>
 </body>
 
 </html>
