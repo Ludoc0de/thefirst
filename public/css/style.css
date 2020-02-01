@@ -373,26 +373,34 @@ li:hover .navbar-span-2 {
     transition: 0.4s;
   }
 
+  .bar4,
+  .bar5 {
+    width: 35px;
+    height: 4px;
+    background-color: orangered;
+    margin: -10px 0;
+    transition: 0.4s;
+  }
   .move .bar1 {
-    transform: rotate(-90deg) translate(180px, 0px);
+    transform: rotate(-90deg) translate(150px, 0px);
     width: 35px;
     height: 4px;
   }
 
   .move .bar2 {
-    transform: rotate(-90deg) translate(160px, -70px);
+    transform: rotate(-90deg) translate(150px, -50px);
     width: 35px;
     height: 4px;
   }
 
   .move .bar3 {
-    transform: rotate(-90deg) translate(140px, -140px);
+    transform: rotate(-90deg) translate(140px, -100px);
     width: 35px;
     height: 4px;
   }
 
   .move .bar4 {
-    transform: rotate(-90deg) translate(120px, -210px);
+    transform: rotate(-90deg) translate(140px, -150px);
     width: 35px;
     height: 4px;
   }
