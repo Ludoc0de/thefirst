@@ -98,9 +98,13 @@
                 </li>
             </ul>
         </div>
-        <button id="buttonMenu">
-            <div id="burger"></div>
-        </button>
+        <div id="buttonMenu">
+            <button id="burger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+        </div>
     </header>
 
     <?=$content?>
