@@ -81,7 +81,9 @@ li:hover .navbar-span-2 {
 .underline-effect:hover::after {
   width: 100%;
 }
-
+#buttonMenu {
+  display: none;
+}
 /* frontend view */
 /*section*/
 
@@ -362,4 +364,8 @@ li:hover .navbar-span-2 {
 
 /*Phone*/
 @media screen and (max-width: 540px) {
+  /*phone header*/
+  #navbar {
+    display: none;
+  }
 }
