@@ -343,4 +343,9 @@ li:hover .navbar-span-2 {
   #navbar {
     display: none;
   }
+
+  #buttonMenu {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
