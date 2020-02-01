@@ -100,9 +100,25 @@
         </div>
         <div id="buttonMenu">
             <button id="burger">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+                <div class="bar1">
+                    <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
+                </div>
+                <div class="bar2">
+                    <a class="nav-link underline-effect" href="#">
+                        On teste
+                    </a>
+                </div>
+                <div class="bar3">
+                    <span class="navbar-span-2">
+                        <a class="nav-link underline-effect" href="#">
+                            La pratique
+                        </a>
+                </div>
+                <div class="bar4">
+                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
+                        Se connecter
+                    </a>
+                </div>
             </button>
         </div>
     </header>
