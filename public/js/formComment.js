@@ -10,6 +10,7 @@ class formCheck {
 
         this.user = document.getElementById("login-pseudo");
         this.helpUser = document.getElementById("helpUser");
+        console.log(this.helpUser);
         this.pass = document.getElementById("login-pass");
         this.helpPass = document.getElementById("helpPass");
         this.loginButton = document.querySelector(".login-button");
@@ -55,6 +56,13 @@ class formCheck {
 
     }
 
+    checkedLogin() {
+
+        if (1 > 2) {
+            console.log('lol');
+        }
+
+    }
 }
 
 const form = new formCheck();
