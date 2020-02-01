@@ -374,7 +374,25 @@ li:hover .navbar-span-2 {
   }
 
   .move .bar1 {
-    transform: rotate(-90deg) translate(140px, 0px);
+    transform: rotate(-90deg) translate(180px, 0px);
+    width: 35px;
+    height: 4px;
+  }
+
+  .move .bar2 {
+    transform: rotate(-90deg) translate(160px, -70px);
+    width: 35px;
+    height: 4px;
+  }
+
+  .move .bar3 {
+    transform: rotate(-90deg) translate(140px, -140px);
+    width: 35px;
+    height: 4px;
+  }
+
+  .move .bar4 {
+    transform: rotate(-90deg) translate(120px, -210px);
     width: 35px;
     height: 4px;
   }
@@ -388,6 +406,24 @@ li:hover .navbar-span-2 {
     position: relative;
     bottom: 0px;
     right: 0px;
+    transform: rotate(180deg);
+  }
+
+  .move .bar2 .nav-link {
+    display: block;
+    position: relative;
+    bottom: 0px;
+    right: 80px;
+    width: 100px;
+    transform: rotate(180deg);
+  }
+
+  .move .bar3 .nav-link {
+    display: block;
+    position: relative;
+    bottom: 0px;
+    right: 80px;
+    width: 100px;
     transform: rotate(180deg);
   }
 
