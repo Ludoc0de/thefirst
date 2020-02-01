@@ -19,15 +19,6 @@
     <!-- checklogin-->
 
     <form class="login-form" action="/thefirst/index.php?action=loginPage" method="post">
-        <?php
-            if ($loginMessage) {
-        ?>
-        <div class="alert alert-danger">
-            <?=$loginMessage?>
-        </div>
-        <?php
-            }
-        ?>
         <p>Se connecter ? C'est ici !</p>
         <div>
             <input class="login-input" type="text" name="nickname" placeholder="nom d'utilisateur">
