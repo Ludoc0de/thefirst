@@ -350,6 +350,7 @@ li:hover .navbar-span-2 {
   }
 
   #burger {
+    margin: 15px 15px 0px 0px;
     width: 50px;
     height: 50px;
     background-image: linear-gradient(
@@ -360,5 +361,15 @@ li:hover .navbar-span-2 {
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 7px #000;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #172940;
+    margin: 6px 0;
+    transition: 0.4s;
   }
 }
