@@ -30,7 +30,7 @@
             </label>
             <input id="login-pass" class="login-input" type="password" name="pass" placeholder="mot de passe">
         </div>
-        <button type="submit" class="login-button"> Se connecter</button>
+        <button type="button" class="login-button">Renseigner le formulaire</button>
     </form>
 </section>
 
