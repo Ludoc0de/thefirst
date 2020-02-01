@@ -1,4 +1,4 @@
-class formCheck {
+class formCommentCheck {
     constructor() {
         this.helpAuthor = document.getElementById("helpAuthor");
         this.author = document.getElementById("author");
@@ -65,4 +65,4 @@ class formCheck {
     }
 }
 
-const form = new formCheck();
+const formComment = new formCommentCheck();
