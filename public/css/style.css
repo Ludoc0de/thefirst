@@ -348,4 +348,17 @@ li:hover .navbar-span-2 {
     display: flex;
     justify-content: flex-end;
   }
+
+  #burger {
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(
+      to bottom left,
+      orangered 30%,
+      orange 50%
+    );
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px #000;
+  }
 }
