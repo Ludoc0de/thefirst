@@ -18,14 +18,18 @@
 
         <form action="index.php?action=addComment&amp;id=<?=$post['id']?>" method="post">
             <div class="postView-form">
-                <label for="author">Auteur</label>
+                <label for="author">Auteur
+                    <span id="helpAuthor"></span>
+                </label>
                 <input type="text" id="author" class="postView-input" name="author" placeholder="Auteur" />
                 <br>
-                <label for="comment">Commentaire</label>
+                <label for="comment">Commentaire
+                    <span id="helpTextarea"></span>
+                </label>
                 <textarea id="comment" class="postView-textarea" name="comment"></textarea>
             </div>
             <div>
-                <input type="submit" class="postView-btn-input" value="Envoyer"
+                <input type="button" class="postView-btn-input" value="Renseigner le formulaire"
                     onclick=" return confirm('Confirmez-vous l\'envois du commentaire ?')" />
             </div>
         </form>
