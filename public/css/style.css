@@ -359,3 +359,7 @@ li:hover .navbar-span-2 {
   height: 30px;
   width: 50%;
 }
+
+/*Phone*/
+@media screen and (max-width: 540px) {
+}
