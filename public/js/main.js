@@ -52,6 +52,7 @@ class moveEffect {
     openMenu() {
         console.log('test');
         this.getBurger.classList.toggle('animate');
+        this.getBurger.classList.toggle('move');
     }
 
 }
