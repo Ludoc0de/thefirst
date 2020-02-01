@@ -42,13 +42,14 @@
     </div>
 </section>
 
-<section>
-    <div class="">
-        <h3 class="">
+<section class="managePost-second-section">
+    <div>
+        <h3>
             Commentaire signalé dans :
+            <span class="title-underline"></span>
         </h3>
     </div>
-    <p class="">
+    <p class="managePost-second-section-p">
         <?php
         while ($seeWarning = $seeWarningComment->fetch()) {
             if ($seeWarning['total'] > 0) {
