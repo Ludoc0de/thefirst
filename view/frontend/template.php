@@ -114,13 +114,13 @@
                     </a>
                 </div>
                 <div class="bar4">
-                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
-                        Se connecter
+                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
+                        Administration
                     </a>
                 </div>
                 <div class="bar5">
-                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
-                        Administration
+                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
+                        Se connecter
                     </a>
                 </div>
             </button>
