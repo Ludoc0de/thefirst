@@ -140,6 +140,9 @@
                     <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
                         <i class="fas fa-lock-open"></i>
                     </a>
+                    <?php
+                        }
+                    ?>
                 </div>
             </button>
         </div>
