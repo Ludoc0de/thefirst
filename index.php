@@ -51,8 +51,8 @@ try {
 
         //addPost
         elseif ($_GET['action'] == 'addPost') {
-            if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                addPost($_POST['title'], $_POST['content']);
+            if (isset($_POST['draft']) && !empty($_POST['title']) && !empty($_POST['content'])) {
+                addPost($_POST['draft'], $_POST['title'], $_POST['content']);
             } else {
                 throw new Exception("merci de renseigner tous les champs");
             }
