@@ -23,7 +23,12 @@
             </div>
             <div class="radio">
                 <p class="radio-p">
-                    changer l'état du brouillon ?
+                    <?php if($post['draft'] > 0) {?>
+                    <span> Ceci est un brouillon !</span>
+                    <?php
+                    }
+                    ?>
+                    Est-ce toujours un brouillon ?
                 </p>
                 <label for="oui">Oui</label>
                 <input type="radio" name="draft" id="draft-yes" value="1" />
