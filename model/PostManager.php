@@ -44,12 +44,12 @@ class PostManager extends Manager
         return $deletePost;
     }
 
-    public function upgradePost($id, $title, $content)
+    public function upgradePost($draft, $id, $title, $content)
     {
         $db = $this->dbConnect();
 
-        $upgrade = $db->prepare('UPDATE posts SET title=?, content=? WHERE id=?');
-        $updatePost = $upgrade->execute(array($title, $content, $id));
+        $upgrade = $db->prepare('UPDATE posts SET draft=?, title=?, content=? WHERE id=?');
+        $updatePost = $upgrade->execute(array($draft, $title, $content, $id));
 
         return $updatePost;
     }
