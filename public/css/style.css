@@ -195,6 +195,10 @@ li:hover .navbar-span-2 {
   align-items: flex-start;
 }
 
+.tox-tinymce {
+  width: 100%;
+}
+
 .postView-input,
 .postView-textarea {
   width: 100%;
