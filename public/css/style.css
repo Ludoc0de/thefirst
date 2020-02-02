@@ -338,6 +338,7 @@ li:hover .navbar-span-2 {
 }
 
 /*Phone*/
+
 @media screen and (max-width: 540px) {
   /*phone header*/
   #navbar {
@@ -473,5 +474,21 @@ li:hover .navbar-span-2 {
       transform: rotate(-90deg);
       box-shadow: none;
     }
+  }
+
+  /* phone frontend view */
+  /*section*/
+
+  .view-images {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -245px;
+    left: 125px;
+  }
+
+  .first-div-section {
+    height: 200px;
+    margin: 10px 35px;
   }
 }
