@@ -6,7 +6,7 @@ require_once 'model\CommentManager.php';
 //addmenber
 function addMember($nickname, $pass)
 {
-    $memberManager = new LogManager();
+    $memberManager = new Neographe\Projet5\Model\LogManager();
     $pass_hash = password_hash($pass, PASSWORD_DEFAULT);
     $addMember = $memberManager->createMember($nickname, $pass_hash);
 
@@ -20,7 +20,7 @@ function createPost()
 // addpost
 function addPost($title, $content)
 {
-    $postManager = new PostManager();
+    $postManager = new Neographe\Projet5\Model\PostManager();
     $addPost = $postManager->newPost($title, $content);
 
     if ($addPost === false) {
@@ -33,8 +33,8 @@ function addPost($title, $content)
 //postInBackend
 function postInBackend()
 {
-    $postManager = new PostManager();
-    $commentManager = new CommentManager();
+    $postManager = new Neographe\Projet5\Model\PostManager();
+    $commentManager = new Neographe\Projet5\Model\CommentManager();
 
     $posts = $postManager->getPosts();
     $seeWarningComment = $commentManager->getAllSignalComment();
@@ -45,7 +45,7 @@ function postInBackend()
 // deletepost
 function deletePost($postId)
 {
-    $postManager = new PostManager();
+    $postManager = new Neographe\Projet5\Model\PostManager();
     $deletePost = $postManager->removePost($postId);
 
     if ($deletePost === false) {
@@ -58,7 +58,7 @@ function deletePost($postId)
 //editPostView
 function editPostView()
 {
-    $postManager = new PostManager();
+    $postManager = new Neographe\Projet5\Model\PostManager();
     $post = $postManager->getPost($_GET['id']);
 
     require 'view\backend\updatePostView.php';
@@ -67,7 +67,7 @@ function editPostView()
 // updatepost
 function updatePost($id, $title, $content)
 {
-    $postManager = new PostManager();
+    $postManager = new Neographe\Projet5\Model\PostManager();
     $updatePost = $postManager->upgradePost($id, $title, $content);
 
     if ($updatePost === false) {
@@ -80,7 +80,7 @@ function updatePost($id, $title, $content)
 //moderateCommentView
 function moderateCommentView()
 {
-    $commentManager = new CommentManager();
+    $commentManager = new Neographe\Projet5\Model\CommentManager();
     $comments = $commentManager->getComments($_GET['id']);
 
     require 'view\backend\moderateCommentView.php';
@@ -88,7 +88,7 @@ function moderateCommentView()
 // moderateComment
 function moderateComment($postId, $author, $comment)
 {
-    $commentManager = new CommentManager();
+    $commentManager = new Neographe\Projet5\Model\CommentManager();
     $moderateComment = $commentManager->modifyComment($postId, $author, $comment);
 
     if ($moderateComment === false) {
@@ -100,7 +100,7 @@ function moderateComment($postId, $author, $comment)
 //warningComment
 function warningComment($warning)
 {
-    $commentManager = new CommentManager();
+    $commentManager = new Neographe\Projet5\Model\CommentManager();
     $warningComment = $commentManager->signalComment($warning);
     if ($warningComment === false) {
         die("Erreur de mise à jour du billet");
@@ -111,7 +111,7 @@ function warningComment($warning)
 // deleteComment
 function deleteComment($postId)
 {
-    $commentManager = new CommentManager();
+    $commentManager = new Neographe\Projet5\Model\CommentManager();
     $deleteComment = $commentManager->removeComment($postId);
 
     if ($deleteComment === false) {
