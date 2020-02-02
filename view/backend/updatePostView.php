@@ -21,9 +21,9 @@
                 <textarea id="newPost" class="updatePost-textarea textareaTiny" name="content"
                     rows="5"><?=$post['content'];?></textarea>
             </div>
-            <div class="createPost-radio">
-                <p class="createPost-radio-p">
-                    Est-ce un brouillon ?
+            <div class="radio">
+                <p class="radio-p">
+                    changer l'état du brouillon ?
                 </p>
                 <label for="oui">Oui</label>
                 <input type="radio" name="draft" id="draft-yes" value="1" />

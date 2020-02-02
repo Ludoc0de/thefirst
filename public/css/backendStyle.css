@@ -196,7 +196,7 @@ li:hover .navbar-span-2 {
   height: 80px;
 }
 
-.createPost-radio {
+.radio {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -204,11 +204,11 @@ li:hover .navbar-span-2 {
   font-size: large;
 }
 
-.createPost-radio > input {
+.radio > input {
   margin-right: 10px;
 }
 
-.createPost-radio-p {
+.radio-p {
   margin-right: 10px;
   color: #172940;
   font-weight: bold;

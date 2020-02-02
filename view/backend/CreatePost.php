@@ -16,8 +16,8 @@
                 <label for="newPost">Contenu</label><br>
                 <textarea class="createPost-textarea textareaTiny" name="content" rows="5"></textarea>
             </div>
-            <div class="createPost-radio">
-                <p class="createPost-radio-p">
+            <div class="radio">
+                <p class="radio-p">
                     Est-ce un brouillon ?
                 </p>
                 <label for="oui">Oui</label>
