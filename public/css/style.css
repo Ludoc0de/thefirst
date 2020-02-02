@@ -409,6 +409,12 @@ li:hover .navbar-span-2 {
     height: 4px;
   }
 
+  .move .bar5 {
+    transform: rotate(-90deg) translate(100px, -80px);
+    width: 35px;
+    height: 4px;
+  }
+
   .nav-link {
     display: none;
   }
