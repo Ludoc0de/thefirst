@@ -390,9 +390,12 @@ li:hover .navbar-span-2 {
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
-  .move .bar1 .nav-link {
+  .move .bar1 .nav-link,
+  .move .bar2 .nav-link,
+  .move .bar3 .nav-link,
+  .move .bar4 .nav-link,
+  .move .bar5 .nav-link {
     display: block;
-    transform: rotate(45deg) translateX(-185px) translateY(-25px);
     background-color: orange;
     border: #172940 1px solid;
     border-radius: 50%;
@@ -401,44 +404,24 @@ li:hover .navbar-span-2 {
     box-shadow: 1px 1px 7px #172940;
   }
 
+  .move .bar1 .nav-link {
+    transform: rotate(45deg) translateX(-185px) translateY(-25px);
+  }
+
   .move .bar2 .nav-link {
-    display: block;
     transform: rotate(45deg) translateX(-155px) translateY(40px);
-    background-color: orange;
-    border: #172940 1px solid;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
   }
 
   .move .bar3 .nav-link {
-    display: block;
     transform: rotate(-45deg) translateX(-65px) translateY(-20px);
-    background-color: orange;
-    border: #172940 1px solid;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
   }
 
   .move .bar4 .nav-link {
-    display: block;
     transform: rotate(0deg) translateX(-55px) translateY(20px);
-    background-color: orange;
-    border: #172940 1px solid;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
   }
 
   .move .bar5 .nav-link {
-    display: block;
     transform: rotate(0deg) translateX(5px) translateY(15px);
-    background-color: orange;
-    border: #172940 1px solid;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
   }
 
   .nav-link i {
@@ -465,6 +448,7 @@ li:hover .navbar-span-2 {
     100% {
       background-color: rgba(23, 41, 64, 0);
       border-radius: 50%;
+      box-shadow: none;
     }
   }
 
