@@ -16,6 +16,15 @@
                 <label for="newPost">Contenu</label><br>
                 <textarea class="createPost-textarea textareaTiny" name="content" rows="5"></textarea>
             </div>
+            <div class="createPost-radio">
+                <p class="createPost-radio-p">
+                    Est-ce un brouillon ?
+                </p>
+                <label for="1">Oui</label>
+                <input type="radio" name="draft" id="draft-yes" value=1 />
+                <label for="0">Non</label>
+                <input type="radio" name="draft" id="draft-no" value=0 />
+            </div>
             <div>
                 <input type="submit" id="submit" class="createPost-button" />
             </div>
