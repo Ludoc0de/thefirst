@@ -130,7 +130,7 @@
                     <?php
                         if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
                     ?>
-                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
+                    <a class="nav-link underline-effect" href="/thefirst/view/frontend/logout.php">
                         <i class="fas fa-lock"></i>
                     </a>
                     <?php
