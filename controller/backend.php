@@ -65,10 +65,10 @@ function editPostView()
 }
 
 // updatepost
-function updatePost($id, $title, $content)
+function updatePost($draft, $id, $title, $content)
 {
     $postManager = new Neographe\Projet5\Model\PostManager();
-    $updatePost = $postManager->upgradePost($id, $title, $content);
+    $updatePost = $postManager->upgradePost($draft, $id, $title, $content);
 
     if ($updatePost === false) {
         die("Erreur de mise à jour du billet");
