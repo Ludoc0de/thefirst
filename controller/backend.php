@@ -18,10 +18,10 @@ function createPost()
 }
 
 // addpost
-function addPost($title, $content)
+function addPost($draft, $title, $content)
 {
     $postManager = new Neographe\Projet5\Model\PostManager();
-    $addPost = $postManager->newPost($title, $content);
+    $addPost = $postManager->newPost($draft, $title, $content);
 
     if ($addPost === false) {
         die("Erreur d'ajout du billet");
