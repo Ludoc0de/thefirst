@@ -196,6 +196,24 @@ li:hover .navbar-span-2 {
   height: 80px;
 }
 
+.createPost-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: orangered;
+  font-size: large;
+}
+
+.createPost-radio > input {
+  margin-right: 10px;
+}
+
+.createPost-radio-p {
+  margin-right: 10px;
+  color: #172940;
+  font-weight: bold;
+}
+
 .createPost-button,
 .updatePost-button,
 .moderate-button {
