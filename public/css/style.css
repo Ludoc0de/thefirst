@@ -509,4 +509,15 @@ li:hover .navbar-span-2 {
     height: 200px;
     margin: 10px 35px;
   }
+
+  /*frontend postView */
+
+  .postView-section {
+    width: 320px;
+    margin: auto;
+  }
+
+  .accordion {
+    width: 60%;
+  }
 }
