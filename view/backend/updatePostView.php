@@ -21,6 +21,15 @@
                 <textarea id="newPost" class="updatePost-textarea textareaTiny" name="content"
                     rows="5"><?=$post['content'];?></textarea>
             </div>
+            <div class="createPost-radio">
+                <p class="createPost-radio-p">
+                    Est-ce un brouillon ?
+                </p>
+                <label for="oui">Oui</label>
+                <input type="radio" name="draft" id="draft-yes" value="1" />
+                <label for="non">Non</label>
+                <input type="radio" name="draft" id="draft-no" value="0" />
+            </div>
             <div>
                 <input type="submit" class="updatePost-button" value="Modifier"
                     onclick="return confirm('Confirmez-vous la modification ?')" />
