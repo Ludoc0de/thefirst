@@ -18,7 +18,7 @@
                 <input type="text" id="title" name="title" class="updatePost-input" value="<?=$post['title'];?>" />
                 <br>
                 <label for="newPost">Contenu</label><br>
-                <textarea id="newPost" class="updatePost-textarea" name="content"
+                <textarea id="newPost" class="updatePost-textarea textareaTiny" name="content"
                     rows="5"><?=$post['content'];?></textarea>
             </div>
             <div>

@@ -14,7 +14,7 @@
                 <input class="createPost-input" type="text" id="title" name="title" />
                 <br>
                 <label for="newPost">Contenu</label><br>
-                <textarea class="createPost-textarea" name="content" rows="5"></textarea>
+                <textarea class="createPost-textarea textareaTiny" name="content" rows="5"></textarea>
             </div>
             <div>
                 <input type="submit" id="submit" class="createPost-button" />

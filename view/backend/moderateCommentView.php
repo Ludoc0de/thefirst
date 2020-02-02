@@ -39,7 +39,7 @@
             <input type="text" id="author" class="moderate-input" name="author" value="<?=$comment['author'];?>" />
             <br>
             <label for="comment">Commentaire</label><br>
-            <textarea id="comment" class="moderate-textarea" name="comment"
+            <textarea id="comment" class="moderate-textarea textareaTiny" name="comment"
                 rows="5"><?=$comment['comment'];?></textarea>
         </div>
         <div>

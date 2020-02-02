@@ -26,7 +26,7 @@
                 <label for="comment">Commentaire
                     <span id="helpTextarea"></span>
                 </label>
-                <textarea id="comment" class="postView-textarea" name="comment"></textarea>
+                <textarea id="comment" class="postView-textarea textareaTiny" name="comment"></textarea>
             </div>
             <div>
                 <input type="button" class="postView-btn-input" value="Renseigner le formulaire"
