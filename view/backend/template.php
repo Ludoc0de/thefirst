@@ -102,7 +102,9 @@
         <div id="buttonMenu">
             <button id="burger">
                 <div class="bar1">
-                    <a class="nav-link underline-effect" href="/thefirst/index.php">Accueil</a>
+                    <a class="nav-link underline-effect" href="/thefirst/index.php">
+                        <i class="fas fa-home"></i>
+                    </a>
                 </div>
                 <div class="bar2">
                     <a class="nav-link underline-effect" href="#">
