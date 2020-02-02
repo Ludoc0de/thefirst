@@ -379,9 +379,12 @@ li:hover .navbar-span-2 {
     width: 35px;
     height: 4px;
     background-color: orangered;
-    margin: 6px 0;
+    position: relative;
+    bottom: 10px;
+    left: 0px;
     transition: 0.4s;
   }
+
   .move .bar1 {
     transform: rotate(-90deg) translate(280px, 0px);
     width: 35px;
