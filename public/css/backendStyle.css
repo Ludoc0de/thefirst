@@ -82,6 +82,10 @@ li:hover .navbar-span-2 {
   width: 100%;
 }
 
+#buttonMenu {
+  display: none;
+}
+
 /*Backend*/
 
 .tag-return {
@@ -271,4 +275,46 @@ li:hover .navbar-span-2 {
   color: orangered;
   border: 1px solid #172940;
   border-radius: 50%;
+}
+
+/*Phone*/
+
+@media screen and (max-width: 540px) {
+  /*phone header*/
+  #navbar {
+    display: none;
+  }
+
+  #buttonMenu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #burger {
+    margin: 15px 15px 0px 0px;
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(
+      to bottom left,
+      orangered 30%,
+      orange 50%
+    );
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px #172940;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #172940;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .nav-link {
+    display: none;
+  }
 }
