@@ -364,6 +364,10 @@ li:hover .navbar-span-2 {
     box-shadow: 1px 1px 7px #172940;
   }
 
+  .nav-link {
+    display: none;
+  }
+
   .bar1,
   .bar2,
   .bar3 {
@@ -374,83 +378,33 @@ li:hover .navbar-span-2 {
     transition: 0.4s;
   }
 
-  .bar4,
-  .bar5 {
-    width: 35px;
-    height: 4px;
-    background-color: orangered;
-    position: relative;
-    bottom: 10px;
-    left: 0px;
-    transition: 0.4s;
-  }
-
   .move .bar1 {
-    transform: rotate(-90deg) translate(280px, 0px);
+    transform: rotate(-45deg) translate(-9px, 6px);
   }
 
   .move .bar2 {
-    transform: rotate(-90deg) translate(200px, 0px);
+    opacity: 0;
   }
 
   .move .bar3 {
-    transform: rotate(-90deg) translate(280px, -50px);
-  }
-
-  .move .bar4 {
-    transform: rotate(-90deg) translate(160px, -50px);
-  }
-
-  .move .bar5 {
-    transform: rotate(-90deg) translate(100px, -85px);
-  }
-
-  .nav-link {
-    display: none;
+    transform: rotate(45deg) translate(-8px, -8px);
   }
 
   .move .bar1 .nav-link {
     display: block;
-    position: relative;
-    bottom: 0px;
-    right: -15px;
-    transform: rotate(180deg);
+
+    transform: rotate(45deg) translateX(-150px) translateY(-30px);
+    background-color: orange;
+    border: #172940 1px solid;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
   }
 
-  .move .bar2 .nav-link {
-    display: block;
+  .nav-link i {
     position: relative;
-    bottom: 0px;
-    right: 70px;
-    width: 100px;
-    transform: rotate(180deg);
-  }
-
-  .move .bar3 .nav-link {
-    display: block;
-    position: relative;
-    bottom: 0px;
-    right: 80px;
-    width: 100px;
-    transform: rotate(180deg);
-  }
-
-  .move .bar4 .nav-link {
-    display: block;
-    position: relative;
-    bottom: 0px;
-    right: 90px;
-    width: 110px;
-    transform: rotate(180deg);
-  }
-
-  .move .bar5 .nav-link {
-    display: block;
-    position: relative;
-    bottom: 0px;
-    right: 90px;
-    width: 110px;
-    transform: rotate(180deg);
+    bottom: 2px;
+    right: 1px;
   }
 
   .animate {
