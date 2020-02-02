@@ -5,7 +5,7 @@ require_once 'model\LogManager.php';
 
 function listPosts()
 {
-    $postManager = new PostManager();
+    $postManager = new \Neographe\Projet5\Model\PostManager();
     $posts = $postManager->getPosts();
 
     require 'view\frontend\view.php';
@@ -13,8 +13,8 @@ function listPosts()
 
 function post()
 {
-    $postManager = new PostManager();
-    $commentManager = new CommentManager();
+    $postManager = new \Neographe\Projet5\Model\PostManager();
+    $commentManager = new Neographe\Projet5\Model\CommentManager();
 
     $post = $postManager->getPost($_GET['id']);
     $comments = $commentManager->getComments($_GET['id']);
@@ -24,7 +24,7 @@ function post()
 
 function addComment($postId, $author, $comment)
 {
-    $commentManager = new CommentManager();
+    $commentManager = new Neographe\Projet5\Model\CommentManager();
     $addComment = $commentManager->postComment($postId, $author, $comment);
 
     if ($addComment === false) {
@@ -51,7 +51,7 @@ function loginPage()
 
 function checkLogin($nickname, $pass)
 {
-    $logManager = new LogManager();
+    $logManager = new Neographe\Projet5\Model\LogManager();
     $check = $logManager->logIn($nickname, $pass);
     $checkPass = password_verify($_POST['pass'], $check['pass']);
 

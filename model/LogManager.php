@@ -1,5 +1,7 @@
 <?php
 
+namespace Neographe\Projet5\Model;
+
 require_once 'Manager.php';
 
 class LogManager extends Manager
