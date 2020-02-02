@@ -510,6 +510,14 @@ li:hover .navbar-span-2 {
     margin: 10px 35px;
   }
 
+  .containerSlide {
+    height: 50px;
+  }
+
+  .slideText {
+    margin-top: 0px;
+  }
+
   /*phone frontend postView */
 
   .postView-section {
