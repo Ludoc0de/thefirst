@@ -115,18 +115,7 @@
                         <i class="fas fa-mitten"></i>
                     </a>
                 </div>
-                <?php
-                    if (isset($_SESSION['nickname'])) {
-                ?>
                 <div class="bar4">
-                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
-                        <i class="fas fa-door-open"></i>
-                    </a>
-                </div>
-                <?php
-                    }
-                ?>
-                <div class="bar5">
                     <?php
                         if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
                     ?>
@@ -143,6 +132,17 @@
                     }
                     ?>
                 </div>
+                <?php
+                    if (isset($_SESSION['nickname'])) {
+                ?>
+                <div class="bar5">
+                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
+                        <i class="fas fa-door-open"></i>
+                    </a>
+                </div>
+                <?php
+                    }
+                ?>
             </button>
         </div>
     </header>
