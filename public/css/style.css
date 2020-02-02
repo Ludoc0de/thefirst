@@ -387,32 +387,22 @@ li:hover .navbar-span-2 {
 
   .move .bar1 {
     transform: rotate(-90deg) translate(280px, 0px);
-    width: 35px;
-    height: 4px;
   }
 
   .move .bar2 {
     transform: rotate(-90deg) translate(200px, 0px);
-    width: 35px;
-    height: 4px;
   }
 
   .move .bar3 {
     transform: rotate(-90deg) translate(280px, -50px);
-    width: 35px;
-    height: 4px;
   }
 
   .move .bar4 {
     transform: rotate(-90deg) translate(160px, -50px);
-    width: 35px;
-    height: 4px;
   }
 
   .move .bar5 {
     transform: rotate(-90deg) translate(100px, -85px);
-    width: 35px;
-    height: 4px;
   }
 
   .nav-link {
