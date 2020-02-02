@@ -318,6 +318,14 @@ li:hover .navbar-span-2 {
     display: none;
   }
 
+  .move .bar1 .nav-link {
+    display: block;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    transform: translateX(100px);
+  }
+
   /*createPost updatePost moderate*/
 
   .createPost-section,
