@@ -24,12 +24,12 @@ class PostManager extends Manager
         return $post;
     }
 
-    public function newPost($title, $content)
+    public function newPost($draft, $title, $content)
     {
         $db = $this->dbConnect();
 
         $addPosts = $db->prepare('INSERT INTO posts (draft, title, content, creation_date) VALUES(?, ?, ?, Now())');
-        $addPost = $addPosts->execute(array($title, $content));
+        $addPost = $addPosts->execute(array($draft, $title, $content));
 
         return $addPost;
     }
