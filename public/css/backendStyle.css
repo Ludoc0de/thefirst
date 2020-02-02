@@ -186,6 +186,10 @@ li:hover .navbar-span-2 {
   height: 25px;
 }
 
+.tox-tinymce {
+  width: 100%;
+}
+
 .createPost-textarea,
 .updatePost-textarea,
 .moderate-textarea {
