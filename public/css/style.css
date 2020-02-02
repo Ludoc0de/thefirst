@@ -454,6 +454,15 @@ li:hover .navbar-span-2 {
     transform: rotate(180deg);
   }
 
+  .move .bar5 .nav-link {
+    display: block;
+    position: relative;
+    bottom: 0px;
+    right: 90px;
+    width: 110px;
+    transform: rotate(180deg);
+  }
+
   .animate {
     animation: animationChange ease 1s forwards;
   }
