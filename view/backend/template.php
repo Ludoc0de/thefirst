@@ -181,9 +181,11 @@
     <!-- script -->
     <script src="/thefirst/public/js/main.js"></script>
     <script src="/thefirst/public/js/slider.js"></script>
+    <script src="https://cdn.tiny.cloud/1/xcs5ihxcsh4gaznurwzojymkulh3h9cd8evxurucg20opu9z/tinymce/5/tinymce.min.js">
+    </script>
     <script>
     tinymce.init({
-        selector: 'textarea#newPost'
+        selector: 'textarea.createPost-textarea'
     });
     </script>
 </body>
