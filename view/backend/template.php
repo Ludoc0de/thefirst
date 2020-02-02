@@ -108,22 +108,37 @@
                 </div>
                 <div class="bar2">
                     <a class="nav-link underline-effect" href="#">
-                        On teste
+                        <i class="fas fa-utensils"></i>
                     </a>
                 </div>
                 <div class="bar3">
                     <a class="nav-link underline-effect" href="#">
-                        La pratique
+                        <i class="fas fa-mitten"></i>
                     </a>
                 </div>
+                <?php
+                    if (isset($_SESSION['nickname'])) {
+                ?>
                 <div class="bar4">
                     <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
-                        Administration
+                        <i class="fas fa-door-open"></i>
                     </a>
                 </div>
+                <?php
+                    }
+                ?>
                 <div class="bar5">
+                    <?php
+                        if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
+                    ?>
                     <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
-                        Se connecter
+                        <i class="fas fa-lock"></i>
+                    </a>
+                    <?php
+                        } else {
+                    ?>
+                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
+                        <i class="fas fa-lock-open"></i>
                     </a>
                 </div>
             </button>
