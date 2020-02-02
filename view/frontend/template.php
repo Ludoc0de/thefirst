@@ -118,6 +118,11 @@
                         Se connecter
                     </a>
                 </div>
+                <div class="bar5">
+                    <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
+                        Administration
+                    </a>
+                </div>
             </button>
         </div>
     </header>
