@@ -12,6 +12,7 @@
 
         <p>
             <?=nl2br($post['content']);?>
+            <?=$image['postview_image'];?>
         </p>
 
         <h3 class="postView-h3">Commentaires</h3>
