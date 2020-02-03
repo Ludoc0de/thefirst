@@ -31,6 +31,8 @@
 <section class="first-section">
     <?php
         while ($dataPosts = $posts->fetch()) {
+            if ($dataPosts['draft'] == 0){
+
     ?>
     <div class="first-div-section">
         <a class="" href="index.php?action=post&amp;id=<?=$dataPosts['id'];?>">
@@ -53,7 +55,7 @@
         <?= $images[$i--];?>
     </div>
     <?php
-        }
+        }}
         $posts->closeCursor();
     ?>
 </section>
