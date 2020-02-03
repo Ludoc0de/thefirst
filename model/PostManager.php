@@ -9,7 +9,7 @@ class PostManager extends Manager
     public function getPosts()
     {
         $db = $this->dbConnect();
-        $req = $db->query('SELECT draft, id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin\') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT 0, 6');
+        $req = $db->query('SELECT draft, id, title, content, view_image, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin\') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT 0, 6');
 
         return $req;
     }
@@ -22,6 +22,17 @@ class PostManager extends Manager
         $post = $req->fetch();
 
         return $post;
+    }
+ 
+     //test image
+    public function getImages($postId)
+    {
+        $db = $this->dbConnect();
+        $images = $db->prepare('SELECT id, postview_image FROM images WHERE post_id=?');
+        $images->execute(array($postId));
+        $image = $images->fetch();
+
+        return $image;
     }
 
     public function newPost($draft, $title, $content)
@@ -53,4 +64,17 @@ class PostManager extends Manager
 
         return $updatePost;
     }
+
+    /*
+    public function postComment($postId, $author, $comment)
+    {
+        $db = $this->dbConnect();
+
+        $comments = $db->prepare('INSERT INTO comments (post_id, author, comment, warning, comment_date) VALUES(?, ?, ?, warning, Now())');
+        $addComment = $comments->execute(array($postId, $author, $comment));
+
+        return $addComment;
+    }
+    */
+
 }
