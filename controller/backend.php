@@ -23,6 +23,21 @@ function addPost($draft, $title, $content)
     $postManager = new Neographe\Projet5\Model\PostManager();
     $addPost = $postManager->newPost($draft, $title, $content);
 
+
+    if (isset($_FILES['view_image']) AND $_FILES['view_image']['error'] == 0){
+        
+         if ($_FILES['view_image']['size'] <= 5000000){
+             
+            $fileInfos = pathinfo($_FILES['view_image']['name']);
+            $extension_upload = $fileInfos['extension'];
+            $extensions_allowed = array('jpg', 'jpeg');
+            if (in_array($extension_upload, $extensions_autorisees))
+                {
+                
+                }
+        }
+    }
+
     if ($addPost === false) {
         die("Erreur d'ajout du billet");
     } else {
