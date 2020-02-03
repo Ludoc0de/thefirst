@@ -9,6 +9,9 @@
 <section class="managePost-first-section">
     <div class="managePost-h1">
         <h1>Administrer les chapitres</h1>
+        <h3>
+            <a href="index.php?action=createPost" class="tag-return">Créer un article ? Içi</a>
+        </h3>
     </div>
     <div class=" managePost-content-div">
         <?php

@@ -30,6 +30,9 @@
             </div>
         </form>
     </div>
+    <h3>
+        <a href="index.php?action=erasePost" class="tag-return">Administrer ? Içi</a>
+    </h3>
 </section>
 
 <?php $content = ob_get_clean()?>
