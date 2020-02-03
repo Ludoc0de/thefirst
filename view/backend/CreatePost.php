@@ -15,7 +15,7 @@
                 <br>
                 <!-- test -->
                 <label for="title">Image titre</label><br>
-                <input class="createPost-image" type="file" id="title" name="image-titre"
+                <input class="createPost-image" type="file" id="title" name="view_image"
                     enctype="multipart/form-data" />
                 <br>
 
