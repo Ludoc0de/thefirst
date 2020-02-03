@@ -190,6 +190,11 @@ li:hover .navbar-span-2 {
   width: 100%;
 }
 
+.createPost-image {
+  margin: 15px 0px;
+  color: #172940;
+  font-weight: bold;
+}
 .createPost-textarea,
 .updatePost-textarea,
 .moderate-textarea {
