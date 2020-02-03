@@ -13,6 +13,12 @@
                 <label for="title">Titre</label><br>
                 <input class="createPost-input" type="text" id="title" name="title" />
                 <br>
+                <!-- test -->
+                <label for="title">Image titre</label><br>
+                <input class="createPost-image" type="file" id="title" name="image-titre"
+                    enctype="multipart/form-data" />
+                <br>
+
                 <label for="newPost">Contenu</label><br>
                 <textarea class="createPost-textarea textareaTiny" name="content" rows="5"></textarea>
             </div>
