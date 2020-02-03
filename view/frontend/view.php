@@ -1,21 +1,6 @@
 <?php $title = "Manger locale";?>
 
-<?php ob_start();
-
-    $images = [
-        "<img class='view-image-size' src=public/images/lune2.jpg>",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-    ];
-
-    for ($i = 0; $i < (count($images)-1); $i++) {
-        $images[$i];
-    }
-
-?>
+<?php ob_start();?>
 
 <section class="title-section">
     <div class="title">
@@ -52,7 +37,7 @@
 
     </div>
     <div class="view-images">
-        <?= $images[$i--];?>
+        <?=$dataPosts['view_image'];?>
     </div>
     <?php
         }}
