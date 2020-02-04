@@ -37,7 +37,7 @@
 
     </div>
     <div class="view-images">
-        <?=$dataPosts['view_image'];?>
+        <img src="public/images/<?=$dataPosts['view_image'];?>" height="100" width="100">
     </div>
     <?php
         }}
