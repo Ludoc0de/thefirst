@@ -51,12 +51,17 @@ try {
 
         //addPost
         elseif ($_GET['action'] == 'addPost') {
-            if (isset($_POST['draft']) && !empty($_POST['title']) && !empty($_POST['content'])) {
-                addPost($_POST['draft'], $_POST['title'], $_POST['content']);
-            } else {
-                throw new Exception("merci de renseigner tous les champs");
-            }
+             if (isset($_POST['draft']) && !empty($_POST['title'])) {
+                if(!empty($_POST['content']) && isset($_FILES['view_image']['name'])){
+                     addPost($_POST['draft'], $_POST['title'], $_POST['content'], $_FILES['view_image']['name']);
+                } else {
+                    throw new Exception("merci de renseignez le contenu et l'image");
+                }
+            }else {
+                    throw new Exception("merci de renseignez le titre et le bouton brouillon");
+                }
         }
+   
 
         // postInBackend
         elseif ($_GET['action'] == 'erasePost') {
