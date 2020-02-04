@@ -18,10 +18,10 @@ function createPost()
 }
 
 // addpost
-function addPost($draft, $title, $content)
+function addPost($draft, $title, $content, $view_image)
 {
     $postManager = new Neographe\Projet5\Model\PostManager();
-    $addPost = $postManager->newPost($draft, $title, $content);
+    $addPost = $postManager->newPost($draft, $title, $content, $view_image);
 
 
     if (isset($_FILES['view_image']) AND $_FILES['view_image']['error'] == 0){
@@ -30,10 +30,10 @@ function addPost($draft, $title, $content)
              
             $fileInfos = pathinfo($_FILES['view_image']['name']);
             $extension_upload = $fileInfos['extension'];
-            $extensions_allowed = array('jpg', 'jpeg');
-            if (in_array($extension_upload, $extensions_autorisees))
+            $extensions_allowed = array('jpg', 'jpeg', 'JPG', 'JPEG');
+            if (in_array($extension_upload, $extensions_allowed))
                 {
-                
+                  move_uploaded_file($_FILES['view_image']['tmp_name'], 'public/images/' . basename($_FILES['view_image']['name']));
                 }
         }
     }
@@ -41,7 +41,7 @@ function addPost($draft, $title, $content)
     if ($addPost === false) {
         die("Erreur d'ajout du billet");
     } else {
-        header("Location: index.php");
+        header("Location: index.php?action=erasePost");
     }
 }
 
