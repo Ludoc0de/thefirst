@@ -8,15 +8,14 @@
             Creer un article
         </h1>
 
-        <form action="index.php?action=addPost" method="post">
+        <form action="index.php?action=addPost" method="post" enctype="multipart/form-data">
             <div class="createPost-form">
                 <label for="title">Titre</label><br>
                 <input class="createPost-input" type="text" id="title" name="title" />
                 <br>
                 <!-- test -->
                 <label for="title">Image titre</label><br>
-                <input class="createPost-image" type="file" id="title" name="view_image"
-                    enctype="multipart/form-data" />
+                <input class="createPost-image" type="file" id="title" name="view_image" />
                 <br>
 
                 <label for="newPost">Contenu</label><br>
