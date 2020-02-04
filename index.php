@@ -87,7 +87,7 @@ try {
         // updatePost
         elseif ($_GET['action'] == 'updatePost') {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
-                updatePost($_POST['draft'], $_GET['id'], $_POST['title'], $_POST['content']);
+                updatePost($_POST['draft'], $_GET['id'], $_POST['title'], $_POST['content'], $_FILES['view_image']['name']);
             } else {
                 throw new Exception("merci de renseigner tous les champs");
             }
