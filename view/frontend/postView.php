@@ -10,10 +10,12 @@
             </u>
         </h2>
 
-        <p>
-            <?=nl2br($post['content']);?>
+        <div>
+            <p>
+                <?=($post['content']);?>
+            </p>
             <?=$image['postview_image'];?>
-        </p>
+        </div>
 
         <h3 class="postView-h3">Commentaires</h3>
 
