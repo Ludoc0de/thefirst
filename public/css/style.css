@@ -148,6 +148,14 @@ li:hover .navbar-span-2 {
   height: 100px;
 }
 
+.view-images > img:hover {
+  width: 250px;
+  height: 250px;
+  border: 2px solid orangered;
+  border-radius: 10px;
+  transition: 0.35s ease-in;
+}
+
 .first-div-section {
   height: 250px;
   width: 400px;
