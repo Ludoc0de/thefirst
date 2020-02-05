@@ -160,10 +160,7 @@
         </div>
         <p class="footer-second-p">
             <a href="http://neographe.org/" target="_blank" class="footer-second-a">
-                <i class="fas fa-circle text-warning"></i>À propos
-            </a>
-            <a href="http://neographe.org/" target="_blank" class="footer-second-a">
-                <i class="fas fa-circle"></i>Contact
+                <i class="fas fa-circle"></i>Contact Neographe
             </a>
         </p>
     </footer>
