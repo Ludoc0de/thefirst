@@ -36,7 +36,7 @@
                     rows="5"><?=$post['content'];?></textarea>
             </div>
             <label for="title">Image titre</label><br>
-            <input class="createPost-image" type="file" id="title" name="view_image" value="<?=$post[4];?>" />
+            <input class="createPost-image" type="file" id="title" name="view_image" />
             <br>
             <div>
                 <input type="submit" class="updatePost-button" value="Modifier"
