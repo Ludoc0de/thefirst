@@ -159,6 +159,9 @@
             </a>
         </div>
         <p class="footer-second-p">
+            <div class="footer-div">
+                Pasionner de tech !<br> Mais la, je te parle de la food du 973 ! <br> Asakura-Cl<br>
+            </div>
             <a href="http://neographe.org/" target="_blank" class="footer-second-a">
                 <i class="fas fa-circle"></i>Contact Neographe
             </a>
