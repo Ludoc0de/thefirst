@@ -143,6 +143,11 @@ li:hover .navbar-span-2 {
   right: 100px;
 }
 
+.view-images > img {
+  width: 100px;
+  height: 100px;
+}
+
 .first-div-section {
   height: 250px;
   width: 400px;
