@@ -30,14 +30,14 @@
         </p>
 
         <div class="containerSlide">
-            <p class="slideText">
-                <?=nl2br($dataPosts['content']);?>
-            </p>
+            <div class="slideText">
+                <?=($dataPosts['content']);?>
+            </div>
         </div>
 
     </div>
     <div class="view-images">
-        <img src="public/images/<?=$dataPosts['view_image'];?>" height="100" width="100">
+        <img src="public/images/<?=$dataPosts['view_image'];?>">
     </div>
     <?php
         }}
