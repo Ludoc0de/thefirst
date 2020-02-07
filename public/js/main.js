@@ -9,12 +9,13 @@ class moveEffect {
 
         this.getBurger = document.querySelector("#burger");
 
+        this.footer = document.querySelector("footer");
+
         //listener
         this.getBurger.addEventListener("click", this.openMenu.bind(this));
         this.window.addEventListener("scroll", this.navbarChange.bind(this));
         this.accordion.addEventListener("click", this.commentOpen.bind(this));
-
-
+        //this.window.addEventListener("scroll", this.footerBar.bind(this));
     }
 
     navbarChange() {
@@ -34,7 +35,15 @@ class moveEffect {
             }
         }
     }
-
+    /*
+    footerBar() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            this.footer.classList.add("footerShrink");
+        } else {
+            this.footer.classList.remove("footerShrink");
+        }
+    }
+*/
     commentOpen() {
         this.accordion.classList.toggle('is-open');
 
