@@ -40,7 +40,7 @@ li {
 .nav-link {
   color: #172940;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 7px;
   font-size: 19px;
   text-decoration: none;
 }
@@ -61,7 +61,6 @@ li {
   align-items: center;
   height: auto;
   width: 100%;
-  font-size: 25px;
   background-color: white;
   transition: 0.3s ease-out;
 }
