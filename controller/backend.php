@@ -2,6 +2,7 @@
 
 require_once 'model\PostManager.php';
 require_once 'model\CommentManager.php';
+require_once 'model\ImagesManager.php';
 
 //addmenber
 function addMember($nickname, $pass)
@@ -91,6 +92,50 @@ function updatePost($draft, $id, $title, $content, $view_image)
         header("Location: index.php?action=erasePost");
     }
 }
+
+
+//test
+
+function postViewImages()
+{   
+    //$imageMessage = null;
+    $imagesManager = new Neographe\Projet5\Model\ImagesManager();
+    $postManager = new \Neographe\Projet5\Model\PostManager();
+    $images = $imagesManager->getImages($_GET['id']);
+    $post = $postManager->getPost($_GET['id']);
+
+    require 'view\backend\postViewImages.php';
+}
+
+function addImages($postId, $postImages)
+{
+    $imageMessage = null;
+    $imagesManager = new Neographe\Projet5\Model\ImagesManager();
+    $addImages = $imagesManager->postImages($postId, $postImages);
+
+     if (isset($_FILES['postview_image']) AND $_FILES['postview_image']['error'] == 0){
+        
+         if ($_FILES['postview_image']['size'] <= 5000000){
+             
+            $fileInfos = pathinfo($_FILES['postview_image']['name']);
+            $extension_upload = $fileInfos['extension'];
+            $extensions_allowed = array('jpg', 'jpeg', 'JPG', 'JPEG');
+            if (in_array($extension_upload, $extensions_allowed))
+                {
+                  move_uploaded_file($_FILES['postview_image']['tmp_name'], 'public/images/postimages/' . basename($_FILES['postview_image']['name']));
+                  $imageMessage = 'Envoyé';
+                }
+        }
+    }
+
+    if ($addImages === false) {
+        die("Erreur d'ajout de l'image");
+    }else {
+        header("Location: index.php?action=postViewImages&id=" . $postId);
+    }
+}
+
+//test
 
 //moderateCommentView
 function moderateCommentView()
