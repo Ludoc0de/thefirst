@@ -14,7 +14,15 @@
             <p>
                 <?=($post['content']);?>
             </p>
-            <?=$image['postview_image'];?>
+            <?php
+                while ($image = $images->fetch()) {
+            ?>
+            <span class="postView-images">
+                <img class="postView-images-size" src="public/images/postimages/<?=$image['postview_image'];?>">
+            </span>
+            <?php 
+                } 
+            ?>
         </div>
 
         <h3 class="postView-h3">Commentaires</h3>
