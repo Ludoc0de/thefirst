@@ -29,6 +29,10 @@
                 Modifier chapitre
             </a>
             <br>
+            <a class="managePost-a" href="index.php?action=postViewImages&amp;id=<?=$dataPosts['id'];?>">
+                Ajouter des images
+            </a>
+            <br>
             <a class="managePost-a" href="index.php?action=moderateCommentView&amp;id=<?=$dataPosts['id'];?>">
                 Modérer commentaire
             </a>
