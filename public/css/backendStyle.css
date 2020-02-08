@@ -137,13 +137,15 @@ li:hover .navbar-span-2 {
 
 .createPost-section,
 .updatePost-section,
-.moderate-section {
+.moderate-section,
+.postview_image-section {
   width: 600px;
   margin: auto;
 }
 
 .createPost-first-div,
 .updatePost-first-div,
+.postview_image-first-div,
 .moderate-first-div {
   display: flex;
   flex-direction: column;
