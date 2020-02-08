@@ -61,7 +61,6 @@ try {
                     throw new Exception("merci de renseignez le titre et le bouton brouillon");
                 }
         }
-   
 
         // postInBackend
         elseif ($_GET['action'] == 'erasePost') {
@@ -83,7 +82,23 @@ try {
                 editPostView();
             }
         }
+        
+        //postViewImages
+        elseif ($_GET['action'] == 'postViewImages') {
+                postViewImages();
+        }
 
+        //addImages
+        elseif ($_GET['action'] == 'addImages'){
+            if (isset($_GET['id']) && $_GET['id'] > 0) {
+                addImages($_GET['id'], $_FILES['postview_image']['name']);
+                
+            } else {
+                var_dump ($_GET['id']);
+                throw new Exception("merci de renseigner tous les champs");
+            }
+        }
+   
         // updatePost
         elseif ($_GET['action'] == 'updatePost') {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
