@@ -1,6 +1,7 @@
 <?php
 require_once 'model\PostManager.php';
 require_once 'model\CommentManager.php';
+require_once 'model\ImagesManager.php';
 require_once 'model\LogManager.php';
 
 function listPosts()
@@ -15,10 +16,11 @@ function post()
 {
     $postManager = new \Neographe\Projet5\Model\PostManager();
     $commentManager = new Neographe\Projet5\Model\CommentManager();
+    $imagesManager = new \Neographe\Projet5\Model\ImagesManager();
 
     $post = $postManager->getPost($_GET['id']);
     $comments = $commentManager->getComments($_GET['id']);
-    $image = $postManager->getImages($_GET['id']);
+    $images = $imagesManager->getImages($_GET['id']);
 
     require 'view\frontend\postView.php';
 }
