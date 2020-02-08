@@ -109,7 +109,6 @@ function postViewImages()
 
 function addImages($postId, $postImages)
 {
-    $imageMessage = null;
     $imagesManager = new Neographe\Projet5\Model\ImagesManager();
     $addImages = $imagesManager->postImages($postId, $postImages);
 
@@ -123,7 +122,6 @@ function addImages($postId, $postImages)
             if (in_array($extension_upload, $extensions_allowed))
                 {
                   move_uploaded_file($_FILES['postview_image']['tmp_name'], 'public/images/postimages/' . basename($_FILES['postview_image']['name']));
-                  $imageMessage = 'Envoyé';
                 }
         }
     }
