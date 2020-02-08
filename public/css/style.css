@@ -156,6 +156,21 @@ li:hover .navbar-span-2 {
   transition: 0.35s ease-in;
 }
 
+.postView-images-size {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.postView-images > img:hover {
+  width: 200px;
+  height: 200px;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  transition: 0.35s ease-in;
+}
+
 .first-div-section {
   height: 250px;
   width: 400px;
