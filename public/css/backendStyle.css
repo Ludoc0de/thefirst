@@ -138,14 +138,14 @@ li:hover .navbar-span-2 {
 .createPost-section,
 .updatePost-section,
 .moderate-section,
-.postview_image-section {
+.postviewImage-section {
   width: 600px;
   margin: auto;
 }
 
 .createPost-first-div,
 .updatePost-first-div,
-.postview_image-first-div,
+.postviewImage-first-div,
 .moderate-first-div {
   display: flex;
   flex-direction: column;
@@ -223,7 +223,8 @@ li:hover .navbar-span-2 {
 
 .createPost-button,
 .updatePost-button,
-.moderate-button {
+.moderate-button,
+.postviewImage-button {
   border-radius: 10px;
   color: orange;
   background-color: #172940;
