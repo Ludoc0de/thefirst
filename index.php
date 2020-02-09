@@ -91,7 +91,7 @@ try {
         //addImages
         elseif ($_GET['action'] == 'addImages'){
             if (isset($_GET['id']) && $_GET['id'] > 0) {
-                addImages($_GET['id'], $_FILES['postview_image']['name']);
+                addImages($_GET['id'], $_FILES['postviewImage']['name']);
                 
             } else {
                 var_dump ($_GET['id']);

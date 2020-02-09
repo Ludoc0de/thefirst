@@ -112,16 +112,16 @@ function addImages($postId, $postImages)
     $imagesManager = new Neographe\Projet5\Model\ImagesManager();
     $addImages = $imagesManager->postImages($postId, $postImages);
 
-     if (isset($_FILES['postview_image']) AND $_FILES['postview_image']['error'] == 0){
+     if (isset($_FILES['postviewImage']) AND $_FILES['postviewImage']['error'] == 0){
         
-         if ($_FILES['postview_image']['size'] <= 5000000){
+         if ($_FILES['postviewImage']['size'] <= 5000000){
              
-            $fileInfos = pathinfo($_FILES['postview_image']['name']);
+            $fileInfos = pathinfo($_FILES['postviewImage']['name']);
             $extension_upload = $fileInfos['extension'];
             $extensions_allowed = array('jpg', 'jpeg', 'JPG', 'JPEG');
             if (in_array($extension_upload, $extensions_allowed))
                 {
-                  move_uploaded_file($_FILES['postview_image']['tmp_name'], 'public/images/postimages/' . basename($_FILES['postview_image']['name']));
+                  move_uploaded_file($_FILES['postviewImage']['tmp_name'], 'public/images/postimages/' . basename($_FILES['postviewImage']['name']));
                 }
         }
     }
