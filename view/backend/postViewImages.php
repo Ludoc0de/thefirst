@@ -14,7 +14,7 @@
         <form action="index.php?action=addImages&amp;id=<?=$post['id'];?>" method="post" enctype="multipart/form-data">
             <div class="radio">
                 <label for="title">Image contenu</label><br>
-                <input class="postviewImage-input" type="file" id="content-image" name="postviewImage" />
+                <input class="postviewImage-input" type="file" id="content-image" name="postviewImage" required />
             </div>
             <div>
                 <input type="submit" class="postviewImage-button" value="Envoyer"
