@@ -6,20 +6,21 @@
     if (isset($_SESSION['nickname'])) {
 ?>
 
-<section class="updatePost-section">
-    <div class="updatePost-first-div">
+<section class="postviewImage-section">
+    <div class="postviewImage-first-div">
         <h1>
             Ajouter des images
         </h1>
         <form action="index.php?action=addImages&amp;id=<?=$post['id'];?>" method="post" enctype="multipart/form-data">
             <div class="radio">
                 <label for="title">Image contenu</label><br>
-                <input class="createPost-image" type="file" id="title" name="postview_image" />
-                <br>
-                <div>
-                    <input type="submit" class="updatePost-button" value="Envoyer"
-                        onclick="return confirm('Confirmez-vous l'\'envois ?')" />
-                </div>
+                <input class="postviewImage-input" type="file" id="title" name="postviewImage" />
+            </div>
+            <div>
+                <input type="submit" class="postviewImage-button" value="Envoyer"
+                    onclick="return confirm('Confirmez-vous l'\'envois ?')" />
+            </div>
+            <div class="imageSend">
             </div>
         </form>
     </div>
