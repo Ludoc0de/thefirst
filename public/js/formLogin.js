@@ -3,7 +3,6 @@ class formLoginCheck {
 
         this.user = document.getElementById("login-pseudo");
         this.helpUser = document.getElementById("helpUser");
-        console.log(this.user);
         this.pass = document.getElementById("login-pass");
         this.helpPass = document.getElementById("helpPass");
         this.loginButton = document.querySelector(".login-button");
