@@ -1,6 +1,14 @@
 .main-body {
   background: beige;
   /*background: linear-gradient(to right, #fff3c9, #fff);*/
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
 }
 
 /*header*/
