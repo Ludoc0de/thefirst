@@ -11,6 +11,10 @@ h4 {
   font-family: "Roboto", sans-serif;
 }
 
+.title > h1 {
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
 /*header*/
 
 #navbar {
