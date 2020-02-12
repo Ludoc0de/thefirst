@@ -29,7 +29,7 @@ class moveEffect {
 
         for (let navbarColor of this.navbarColors) {
             if (document.documentElement.scrollTop > 50) {
-                navbarColor.style.backgroundColor = "#FF8A00";
+                navbarColor.style.backgroundColor = "#ffd600";
             } else {
                 navbarColor.style.backgroundColor = "orange";
             }
