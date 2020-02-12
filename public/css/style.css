@@ -11,10 +11,6 @@ h4 {
   font-family: "Roboto", sans-serif;
 }
 
-.title > h1 {
-  font-family: "Montserrat Subrayada", sans-serif;
-}
-
 /*header*/
 
 #navbar {
@@ -102,6 +98,16 @@ li:hover .navbar-span-2 {
   padding: 30px;
   text-align: center;
   margin-top: 20px;
+}
+
+.title > h1 {
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.title > p {
+  margin-left: 105px;
+  margin-top: -15px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .view-subtitle {
