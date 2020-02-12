@@ -142,6 +142,7 @@ li:hover .navbar-span-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .first-section a {
