@@ -94,10 +94,15 @@ li:hover .navbar-span-2 {
 /*section*/
 
 .title {
+  height: 200px;
   color: #172940;
   padding: 30px;
   text-align: center;
   margin-top: 20px;
+  background: url("../images/logo.png");
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: 50% 95%;
 }
 
 .title > h1 {
@@ -107,7 +112,9 @@ li:hover .navbar-span-2 {
 .title > p {
   margin-left: 105px;
   margin-top: -15px;
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  color: orange;
 }
 
 .view-subtitle {
