@@ -2,7 +2,7 @@ class moveEffect {
     constructor() {
         this.navbarLi = document.getElementsByClassName("navbar-li");
         this.window = window;
-        this.navbarColors = document.getElementsByClassName("navbar-span-1");
+        this.navbarColors = document.getElementsByClassName("navbar-span-2");
         this.accordion = document.querySelector(".accordion");
         this.postView = document.querySelector(".postView-comment-div");
         this.minus = document.querySelector(".fa-plus");
