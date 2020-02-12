@@ -160,12 +160,14 @@ li:hover .navbar-span-2 {
   height: 345px;
   border: 2px solid whIte;
   border-radius: 10px;
+  transition: 0.35s ease-in;
+  transform: rotate(10deg);
 }
 
 .view-images > img:hover {
-  border: 2px solid orangered;
+  border: 2px solid white;
   border-radius: 10px;
-  transform: translateX(200px);
+  transform: translateX(230px);
   transition: 0.35s ease-in;
 }
 
@@ -189,7 +191,7 @@ li:hover .navbar-span-2 {
   width: 300px;
   background-color: white;
   padding-left: 20px;
-  margin: 50px 35px;
+  margin: 50px 0px;
   border-radius: 10px;
   z-index: 1;
 }
@@ -571,6 +573,7 @@ footer {
     position: relative;
     top: -245px;
     left: 125px;
+    z-index: 2;
   }
 
   .view-images > img {
