@@ -4,7 +4,7 @@
 
 <section class="title-section">
     <div class="title">
-        <h1>Neographe: présente Guyane food !</h1>
+        <h1>Food Neographe !</h1>
         <p>lets talk about food !</p>
     </div>
     <div class="view-subtitle">
