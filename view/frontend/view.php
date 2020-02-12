@@ -5,7 +5,7 @@
 <section class="title-section">
     <div class="title">
         <h1>Food Neographe !</h1>
-        <p>lets talk about food !</p>
+        <p>lets talk about food.</p>
     </div>
     <div class="view-subtitle">
         <h2>Derniers articles</h2>
