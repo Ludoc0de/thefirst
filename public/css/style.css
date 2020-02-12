@@ -148,26 +148,24 @@ li:hover .navbar-span-2 {
 }
 
 .view-images {
-  width: 100px;
-  height: 100px;
-  border: 1px solid white;
-  box-shadow: 1px 2px 4px #172940;
-  border-radius: 5px;
+  width: 300px;
+  height: 350px;
   position: relative;
-  top: 20px;
-  right: 100px;
+  top: 50px;
+  right: 235px;
 }
 
 .view-images > img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 345px;
+  border: 2px solid whIte;
+  border-radius: 10px;
 }
 
 .view-images > img:hover {
-  width: 250px;
-  height: 250px;
   border: 2px solid orangered;
   border-radius: 10px;
+  transform: translateX(200px);
   transition: 0.35s ease-in;
 }
 
@@ -187,12 +185,13 @@ li:hover .navbar-span-2 {
 }
 
 .first-div-section {
-  height: 250px;
-  width: 400px;
+  height: 350px;
+  width: 300px;
   background-color: white;
   padding-left: 20px;
   margin: 50px 35px;
   border-radius: 10px;
+  z-index: 1;
 }
 
 .containerSlide {
