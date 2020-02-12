@@ -195,12 +195,12 @@ li:hover .navbar-span-2 {
 }
 
 .containerSlide {
-  height: 125px;
+  height: 210px;
   overflow: hidden;
 }
 
 .slideText {
-  margin-top: 125px;
+  margin-top: 205px;
   transition: transform 5s linear;
 }
 
