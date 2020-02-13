@@ -100,9 +100,9 @@ li:hover .navbar-span-2 {
   text-align: center;
   margin-top: 20px;
   background: url("../images/logo.png");
-  background-size: 130px;
+  background-size: 125px;
   background-repeat: no-repeat;
-  background-position: 50% 85%;
+  background-position: 50% 80%;
 }
 
 .title > h1 {
