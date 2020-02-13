@@ -313,6 +313,7 @@ li:hover .navbar-span-2 {
   height: 0;
   transition: height 0.5s linear;
   overflow: hidden;
+  margin-bottom: 70px;
 }
 
 .postView-comment-author {
