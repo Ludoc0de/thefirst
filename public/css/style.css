@@ -455,16 +455,6 @@ footer {
   color: #172940;
 }
 
-.footer-second-p {
-  text-align: end;
-}
-
-.footer-div {
-  border-top: 2px solid orangered;
-  border-bottom: 2px solid orangered;
-  margin-bottom: 5px;
-  text-align: end;
-}
 /*Phone*/
 
 @media screen and (max-width: 540px) {
