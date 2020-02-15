@@ -408,15 +408,6 @@ footer {
   align-items: center;
   background-color: white;
   z-index: 1;
-  /*background: linear-gradient(to top, beige, orange, orangered);*/
-  /*
-  position: fixed;
-  bottom: 0;
-  text-align: right;
-  width: 100%;
-  height: 0px;
-  transition: ease-out 0.5s;
-  */
 }
 
 .footerShrink {
@@ -452,7 +443,7 @@ footer > p {
   font-size: larger;
   border-top: 1px orangered solid;
 }
-.
+
 /*Phone*/
 
 @media screen and (max-width: 540px) {
