@@ -430,7 +430,7 @@ footer {
   border-radius: 5px;
   color: orange;
   background-color: #172940;
-  margin: 0 20px;
+  margin: 0 40px;
   box-shadow: 2px 2px 7px orange;
   transition: 0.5s ease;
   font-size: large;
@@ -447,6 +447,11 @@ footer {
   transform: scale(1.7) translate(9px, 9px);
 }
 
+footer > p {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: larger;
+  border-top: 1px orangered solid;
+}
 .
 /*Phone*/
 
