@@ -444,13 +444,7 @@ footer {
 
 .footer-first-a:hover .icon {
   transition: 0.5s ease;
-  transform: scale(2) translate(9px, 9px);
-}
-
-.footer-second-a {
-  font-size: large;
-  text-decoration: none;
-  color: #172940;
+  transform: scale(1.7) translate(9px, 9px);
 }
 
 /*Phone*/
