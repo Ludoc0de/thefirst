@@ -405,7 +405,7 @@ footer {
   height: 50px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: white;
   z-index: 1;
   /*background: linear-gradient(to top, beige, orange, orangered);*/
@@ -422,10 +422,6 @@ footer {
 .footerShrink {
   height: 80px;
   background: white;
-}
-
-.footer-first-p {
-  display: flex;
 }
 
 .footer-first-a {
