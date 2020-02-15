@@ -152,22 +152,19 @@
     <?=$content?>
 
     <footer>
-        <div class="footer-first-p">
-            <a href="https://twitter.com/neographe_org" target="_blank" class="footer-first-a">
-                <i class="fab fa-twitter icon"></i>
-            </a>
-            <a href="https://www.instagram.com/asakura.cl/?hl=fr" target="_blank" class="footer-first-a">
-                <i class="fab fa-instagram icon"></i>
-            </a>
-        </div>
-        <p class="footer-second-p">
-            <div class="footer-div">
-                Pasionner de tech !<br> Mais la, je te parle de la food du 973 ! <br> Asakura-Cl<br>
-            </div>
-            <a href="http://neographe.org/" target="_blank" class="footer-second-a">
-                <i class="fas fa-circle"></i>Contact Neographe
-            </a>
-        </p>
+        <a href="https://twitter.com/neographe_org" target="_blank" class="footer-a">
+            <i class="fab fa-twitter icon"></i>
+        </a>
+        <a href="https://www.instagram.com/asakura.cl/?hl=fr" target="_blank" class="footer-a">
+            <i class="fab fa-instagram icon"></i>
+        </a>
+        <p>NEOGRAPHE</p>
+        <a href="https://twitter.com/neographe_org" target="_blank" class="footer-a">
+            <i class="icon">I</i>
+        </a>
+        <a href="https://www.instagram.com/asakura.cl/?hl=fr" target="_blank" class="footer-a">
+            <i class="icon">@</i>
+        </a>
     </footer>
 
     <!-- script -->
