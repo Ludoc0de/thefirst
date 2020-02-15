@@ -430,7 +430,7 @@ footer {
   border-radius: 5px;
   color: orange;
   background-color: #172940;
-  margin: 2px 20px 0px 10px;
+  margin: 0 20px;
   box-shadow: 2px 2px 7px orange;
   transition: 0.5s ease;
   font-size: large;
