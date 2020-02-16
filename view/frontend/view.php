@@ -1,14 +1,15 @@
-<?php $title = "cuisine de Guyane";?>
+<?php $title = "cuisine créole";?>
 
 <?php ob_start();?>
 
 <section class="title-section">
     <div class="title">
         <h1>Food yana!</h1>
-        <p>lets talk about food.</p>
+        <h2>lets talk about food.</h2>
+        <h2>cuisine créole</h2>
     </div>
     <div class="view-subtitle">
-        <h2>Derniers articles</h2>
+        <p>Derniers articles</p>
         <div class="view-subtitle-underline"></div>
     </div>
 </section>
