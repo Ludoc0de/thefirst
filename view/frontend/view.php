@@ -1,4 +1,4 @@
-<?php $title = "Manger locale";?>
+<?php $title = "cuisine de Guyane";?>
 
 <?php ob_start();?>
 
