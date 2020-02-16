@@ -416,21 +416,20 @@ footer {
 }
 
 .footer-a {
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-  color: orange;
-  background-color: #172940;
+  color: #172940;
   margin: 0 40px;
-  box-shadow: 2px 2px 7px orange;
   transition: 0.5s ease;
   font-size: large;
   text-decoration: none;
 }
 
 .footer-a:hover {
-  color: #172940;
-  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  color: orangered;
+  box-shadow: 2px 2px 7px orange;
+  background-color: #172940;
 }
 
 .footer-a:hover .icon {
