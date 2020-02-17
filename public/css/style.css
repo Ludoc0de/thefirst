@@ -571,7 +571,7 @@ footer > p {
     width: 80px;
     height: 80px;
     position: relative;
-    top: -295px;
+    top: -270px;
     left: 125px;
     z-index: 2;
   }
@@ -582,12 +582,12 @@ footer > p {
   }
 
   .first-div-section {
-    height: 200px;
+    height: 280px;
     margin: 40px 35px;
   }
 
   .containerSlide {
-    height: 50px;
+    height: 115px;
   }
 
   .slideText {
