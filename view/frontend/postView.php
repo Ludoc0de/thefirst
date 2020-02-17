@@ -4,11 +4,11 @@
 
 <section class="postView-section">
     <div class="postView-div">
-        <h2>
+        <h1>
             <u>
                 <?=htmlspecialchars($post['title']);?>
             </u>
-        </h2>
+        </h1>
 
         <div>
             <p>
@@ -25,7 +25,7 @@
             ?>
         </div>
 
-        <h3 class="postView-h3">Commentaires</h3>
+        <h2 class="postView-h3">Commentaires</h2>
 
         <form action="index.php?action=addComment&amp;id=<?=$post['id']?>" method="post">
             <div class="postView-form">
