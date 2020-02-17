@@ -245,9 +245,10 @@ li:hover .navbar-span-2 {
   margin-top: 50px;
 }
 
-.postView-div h2,
+.postView-div h1,
 .postView-h3 {
   color: orangered;
+  font-size: larger;
 }
 
 .postView-form {
