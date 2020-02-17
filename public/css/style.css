@@ -109,10 +109,10 @@ li:hover .navbar-span-2 {
   font-family: "Montserrat Subrayada", sans-serif;
 }
 
-.title > p {
-  margin-left: 105px;
+.title > h2 {
+  margin-left: 200px;
   margin-top: -15px;
-  font-weight: bold;
+  font-size: large;
   font-family: "Montserrat", sans-serif;
   color: orange;
 }
