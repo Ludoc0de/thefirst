@@ -124,6 +124,11 @@ li:hover .navbar-span-2 {
   align-items: center;
 }
 
+.view-subtitle > p {
+  font-size: x-large;
+  font-weight: bold;
+}
+
 .view-subtitle-underline {
   position: relative;
   bottom: 30px;
