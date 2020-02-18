@@ -1,4 +1,4 @@
-<?php $title = "Neographe food";?>
+<?php $title = htmlspecialchars($post['title']);?>
 
 <?php ob_start()?>
 
