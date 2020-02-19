@@ -424,7 +424,6 @@ footer {
 .footer-a {
   color: #172940;
   margin: 0 40px;
-  transition: 0.5s ease;
   font-size: large;
   text-decoration: none;
 }
@@ -433,14 +432,13 @@ footer {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  color: orangered;
   box-shadow: 2px 2px 7px orange;
-  background-color: #172940;
+  background: linear-gradient(145deg, orange, orangered);
 }
 
 .footer-a:hover .icon {
   transition: 0.5s ease;
-  transform: scale(1.7) translate(9px, 9px);
+  transform: scale(1.5);
 }
 
 footer > p {
