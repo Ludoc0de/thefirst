@@ -240,6 +240,11 @@ li:hover .navbar-span-2 {
   font-size: larger;
 }
 
+.postviewImage-second-div {
+  margin-bottom: 50px;
+  border-bottom: 2px solid orangered;
+}
+
 .postView-images-size {
   border: 1px solid white;
   border-radius: 10px;
