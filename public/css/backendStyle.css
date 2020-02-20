@@ -137,6 +137,12 @@ li:hover .navbar-span-2 {
 
 .view-images {
   border-bottom: 2px solid orangered;
+  margin-bottom: 20px;
+}
+
+.view-images > p {
+  font-size: larger;
+  font-weight: bold;
 }
 
 .view-images > img {
