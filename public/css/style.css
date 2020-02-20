@@ -426,6 +426,7 @@ footer {
   margin: 0 40px;
   font-size: large;
   text-decoration: none;
+  transition: 0.5s ease;
 }
 
 .footer-a:hover {
@@ -433,7 +434,7 @@ footer {
   height: 35px;
   border-radius: 5px;
   box-shadow: 2px 2px 7px orange;
-  background: linear-gradient(145deg, orange, orangered);
+  background: orangered;
 }
 
 .footer-a:hover .icon {
