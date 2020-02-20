@@ -135,6 +135,15 @@ li:hover .navbar-span-2 {
 
 /*createPost updatePost moderate*/
 
+.view-images {
+  border-bottom: 2px solid orangered;
+}
+
+.view-images > img {
+  width: 100px;
+  height: 100px;
+}
+
 .createPost-section,
 .updatePost-section,
 .moderate-section,
