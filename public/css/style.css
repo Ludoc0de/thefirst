@@ -437,6 +437,10 @@ footer {
   background: orangered;
 }
 
+.icon {
+  transition: 0.5s ease;
+}
+
 .footer-a:hover .icon {
   transition: 0.5s ease;
   transform: scale(1.5);
