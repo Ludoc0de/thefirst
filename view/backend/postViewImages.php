@@ -11,7 +11,7 @@
         <h1>
             Ajouter des images
         </h1>
-        <div>
+        <div class="postviewImage-second-div">
             <p>images actuelles :</p>
             <?php
                 while ($image = $images->fetch()) {
