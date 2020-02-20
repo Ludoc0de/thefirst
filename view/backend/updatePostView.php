@@ -11,6 +11,10 @@
         <h1>
             Modifier les chapitres
         </h1>
+        <div class="view-images">
+            <p>Image titre</p>
+            <img src="public/images/<?=$post['view_image'];?>">
+        </div>
 
         <form action="index.php?action=updatePost&amp;id=<?=$post['id'];?>" method="post" enctype="multipart/form-data">
             <div class="radio">
@@ -27,6 +31,9 @@
                 <label for="non">Non</label>
                 <input type="radio" name="draft" id="draft-no" value="0" />
             </div>
+            <label for="title">Image titre</label><br>
+            <input class="createPost-image" type="file" id="title" name="view_image" />
+            <br>
             <div class="updatePost-form">
                 <label for="title">Titre</label><br>
                 <input type="text" id="title" name="title" class="updatePost-input" value="<?=$post['title'];?>" />
@@ -35,9 +42,6 @@
                 <textarea id="newPost" class="updatePost-textarea textareaTiny" name="content"
                     rows="5"><?=$post['content'];?></textarea>
             </div>
-            <label for="title">Image titre</label><br>
-            <input class="createPost-image" type="file" id="title" name="view_image" />
-            <br>
             <div>
                 <input type="submit" class="updatePost-button" value="Modifier"
                     onclick="return confirm('Confirmez-vous la modification ?')" />
