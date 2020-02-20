@@ -11,6 +11,18 @@
         <h1>
             Ajouter des images
         </h1>
+        <div>
+            <p>images actuelles :</p>
+            <?php
+                while ($image = $images->fetch()) {
+            ?>
+            <span class="postView-images">
+                <img class="postView-images-size" src="public/images/postimages/<?=$image['postview_image'];?>">
+            </span>
+            <?php 
+                } 
+            ?>
+        </div>
         <form action="index.php?action=addImages&amp;id=<?=$post['id'];?>" method="post" enctype="multipart/form-data">
             <div class="radio">
                 <label for="title">Image contenu</label><br>
