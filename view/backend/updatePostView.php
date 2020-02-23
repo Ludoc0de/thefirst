@@ -31,8 +31,8 @@
                 <label for="non">Non</label>
                 <input type="radio" name="draft" id="draft-no" value="0" />
             </div>
-            <label for="title-image">Ajouter ou remplacer image titre</label><br>
-            <input class="createPost-image" type="file" id="title-image" name="view_image" />
+            <label for="title-image-update">Ajouter ou remplacer image titre</label><br>
+            <input class="createPost-image" type="file" id="title-image-update" name="view_image" />
             <br>
             <div class="updatePost-form">
                 <label for="title">Titre</label><br>
