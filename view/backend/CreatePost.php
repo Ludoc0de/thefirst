@@ -25,8 +25,8 @@
                 <label for="newPost">Contenu</label><br>
                 <textarea class="createPost-textarea textareaTiny" name="content" rows="5"></textarea>
                 <br>
-                <label for="title">Image titre</label><br>
-                <input class="createPost-image" type="file" id="title" name="view_image" />
+                <label for="title-image">Image titre</label><br>
+                <input class="createPost-image" type="file" id="title-image" name="view_image" />
                 <br>
             </div>
             <div>
