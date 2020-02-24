@@ -86,6 +86,20 @@ function updatePost($draft, $id, $title, $content, $view_image)
     $postManager = new Neographe\Projet5\Model\PostManager();
     $updatePost = $postManager->upgradePost($draft, $id, $title, $content, $view_image);
 
+    if (isset($_FILES['view_image']) AND $_FILES['view_image']['error'] == 0){
+        
+         if ($_FILES['view_image']['size'] <= 5000000){
+             
+            $fileInfos = pathinfo($_FILES['view_image']['name']);
+            $extension_upload = $fileInfos['extension'];
+            $extensions_allowed = array('jpg', 'jpeg', 'JPG', 'JPEG');
+            if (in_array($extension_upload, $extensions_allowed))
+                {
+                  move_uploaded_file($_FILES['view_image']['tmp_name'], 'public/images/' . basename($_FILES['view_image']['name']));
+                }
+        }
+    }
+
     if ($updatePost === false) {
         die("Erreur de mise à jour du billet");
     } else {
