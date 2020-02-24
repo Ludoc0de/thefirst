@@ -374,7 +374,7 @@ li:hover .navbar-span-2 {
   .bar3 {
     width: 35px;
     height: 4px;
-    background-color: #172940;
+    background-color: white;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -397,7 +397,7 @@ li:hover .navbar-span-2 {
   .move .bar4 .nav-link,
   .move .bar5 .nav-link {
     display: block;
-    background-color: orange;
+    background: linear-gradient(145deg, orange 0%, orangered 100%);
     border: #172940 1px solid;
     border-radius: 50%;
     width: 40px;
