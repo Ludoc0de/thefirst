@@ -511,8 +511,8 @@ footer > p {
   .move .bar4 .nav-link,
   .move .bar5 .nav-link {
     display: block;
-    background-color: orange;
-    border: #172940 1px solid;
+    background: linear-gradient(145deg, white 0%, orange 50%);
+    border: white 1px solid;
     border-radius: 50%;
     width: 40px;
     height: 20px;
