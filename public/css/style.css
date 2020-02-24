@@ -434,7 +434,7 @@ footer {
   height: 35px;
   border-radius: 5px;
   box-shadow: 2px 2px 7px orange;
-  background: orangered;
+  background: linear-gradient(145deg, orange 0%, orangered 100%);
 }
 
 .icon {
