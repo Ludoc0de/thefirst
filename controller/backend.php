@@ -1,8 +1,8 @@
 <?php
 
-require_once 'model\PostManager.php';
-require_once 'model\CommentManager.php';
-require_once 'model\ImagesManager.php';
+require_once 'model/PostManager.php';
+require_once 'model/CommentManager.php';
+require_once 'model/ImagesManager.php';
 
 //addmenber
 function addMember($nickname, $pass)
@@ -55,7 +55,7 @@ function postInBackend()
     $posts = $postManager->getPosts();
     $seeWarningComment = $commentManager->getAllSignalComment();
 
-    require 'view\backend\managePost.php';
+    require 'view/backend/managePost.php';
 }
 
 // deletepost
@@ -77,7 +77,7 @@ function editPostView()
     $postManager = new Neographe\Projet5\Model\PostManager();
     $post = $postManager->getPost($_GET['id']);
 
-    require 'view\backend\updatePostView.php';
+    require 'view/backend/updatePostView.php';
 }
 
 // updatepost
@@ -118,7 +118,7 @@ function postViewImages()
     $images = $imagesManager->getImages($_GET['id']);
     $post = $postManager->getPost($_GET['id']);
 
-    require 'view\backend\postViewImages.php';
+    require 'view/backend/postViewImages.php';
 }
 
 function addImages($postId, $postImages)
@@ -155,7 +155,7 @@ function moderateCommentView()
     $commentManager = new Neographe\Projet5\Model\CommentManager();
     $comments = $commentManager->getComments($_GET['id']);
 
-    require 'view\backend\moderateCommentView.php';
+    require 'view/backend/moderateCommentView.php';
 }
 // moderateComment
 function moderateComment($postId, $author, $comment)

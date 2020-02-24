@@ -1,15 +1,15 @@
 <?php
-require_once 'model\PostManager.php';
-require_once 'model\CommentManager.php';
-require_once 'model\ImagesManager.php';
-require_once 'model\LogManager.php';
+require_once 'model/PostManager.php';
+require_once 'model/CommentManager.php';
+require_once 'model/ImagesManager.php';
+require_once 'model/LogManager.php';
 
 function listPosts()
 {
     $postManager = new \Neographe\Projet5\Model\PostManager();
     $posts = $postManager->getLastPosts();
 
-    require 'view\frontend\view.php';
+    require 'view/frontend/view.php';
 }
 
 function post()
@@ -22,7 +22,7 @@ function post()
     $comments = $commentManager->getComments($_GET['id']);
     $images = $imagesManager->getImages($_GET['id']);
 
-    require 'view\frontend\postView.php';
+    require 'view/frontend/postView.php';
 }
 
 function addComment($postId, $author, $comment)
@@ -49,7 +49,7 @@ function loginPage()
         throw new Exception("merci de renseigner tous les champs");
     }
 
-    require 'view\frontend\login.php';
+    require 'view/frontend/login.php';
 }
 
 function checkLogin($nickname, $pass)
