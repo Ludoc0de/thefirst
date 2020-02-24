@@ -185,7 +185,8 @@
     </script>
     <script>
     tinymce.init({
-        selector: '.textareaTiny'
+        selector: '.textareaTiny',
+        height: 500
 
     });
     </script>
