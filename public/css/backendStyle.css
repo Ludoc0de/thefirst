@@ -38,7 +38,7 @@ li {
 .nav-link {
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 5px;
   font-size: 17px;
   text-decoration: none;
 }
@@ -58,7 +58,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
   width: 100%;
   background-color: orange;
   transition: 0.3s ease-out;
