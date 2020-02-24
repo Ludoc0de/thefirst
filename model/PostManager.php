@@ -14,6 +14,14 @@ class PostManager extends Manager
         return $req;
     }
 
+    public function getLastPosts()
+    {
+        $db = $this->dbConnect();
+        $req = $db->query('SELECT draft, id, title, content, view_image, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin\') AS creation_date_fr FROM posts ORDER BY draft LIMIT 0, 6');
+
+        return $req;
+    }
+
     public function getPost($postId)
     {
         $db = $this->dbConnect();
