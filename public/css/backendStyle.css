@@ -359,11 +359,7 @@ li:hover .navbar-span-2 {
     margin: 15px 15px 0px 0px;
     width: 50px;
     height: 50px;
-    background-image: linear-gradient(
-      to bottom left,
-      orangered 30%,
-      orange 50%
-    );
+    background-image: linear-gradient(to bottom left, orangered 0%, orange 80%);
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 7px #172940;
@@ -404,7 +400,7 @@ li:hover .navbar-span-2 {
     background-color: orange;
     border: #172940 1px solid;
     border-radius: 50%;
-    width: 20px;
+    width: 40px;
     height: 20px;
     box-shadow: 1px 1px 7px #172940;
   }
