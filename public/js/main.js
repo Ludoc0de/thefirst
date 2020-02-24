@@ -29,9 +29,9 @@ class moveEffect {
 
         for (let navbarColor of this.navbarColors) {
             if (document.documentElement.scrollTop > 50) {
-                navbarColor.style.backgroundColor = "orangered";
+                navbarColor.style.background = "linear-gradient(145deg, orange 0%, orangered 100%)";
             } else {
-                navbarColor.style.backgroundColor = "orange";
+                navbarColor.style.background = "linear-gradient(145deg, white 0%, orange 50%)";
             }
         }
     }
