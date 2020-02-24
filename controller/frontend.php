@@ -7,7 +7,7 @@ require_once 'model\LogManager.php';
 function listPosts()
 {
     $postManager = new \Neographe\Projet5\Model\PostManager();
-    $posts = $postManager->getPosts();
+    $posts = $postManager->getLastPosts();
 
     require 'view\frontend\view.php';
 }
