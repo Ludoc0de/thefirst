@@ -39,7 +39,7 @@ class moveEffect {
     }
 
     pop() {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
             this.topButton.style.display = "block";
         } else {
             this.topButton.style.display = "none";
