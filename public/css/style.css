@@ -404,6 +404,10 @@ li:hover .navbar-span-2 {
   width: 70%;
 }
 
+#topButton {
+  display: none;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -619,6 +623,12 @@ footer > p {
     width: 100%;
   }
 
+  /*top button*/
+  #topButton {
+    margin-bottom: 10em;
+  }
+
+  /*footer*/
   .footer-a {
     margin: 0 25px;
   }
