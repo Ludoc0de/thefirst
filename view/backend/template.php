@@ -20,9 +20,9 @@
                         <span class="navbar-span-1">
                             <a class="nav-link">
                                 <?php
-                                if (isset($_SESSION['nickname'])) {
+                                if (isset($_SESSION['nickname'])):
                                     echo "Bonjour " . $_SESSION['nickname'];
-                                    }
+                                endif;
                                 ?>
                             </a>
                         </span>
@@ -56,7 +56,7 @@
                         </span>
                     </li>
                     <?php
-                        if (isset($_SESSION['nickname'])) {
+                        if (isset($_SESSION['nickname'])):
                     ?>
                     <li class="navbar-li">
                         <span class="navbar-span-1">
@@ -69,12 +69,12 @@
                         </span>
                     </li>
                     <?php
-                    }
+                        endif;
                     ?>
                     <li class="navbar-li">
                         <?php
-                        if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
-                    ?>
+                            if (isset($_SESSION['id']) and isset($_SESSION['nickname'])):
+                        ?>
                         <span class="navbar-span-1">
                             <i class="fas fa-lock"></i>
                         </span>
@@ -83,8 +83,8 @@
                                 Se déconnecter
                             </a>
                             <?php
-                        } else {
-                    ?>
+                                else:
+                            ?>
                             <span class="navbar-span-1">
                                 <i class="fas fa-lock-open"></i>
                             </span>
@@ -93,8 +93,8 @@
                                     Se connecter
                                 </a>
                                 <?php
-                        }
-                    ?>
+                                    endif;
+                                ?>
                             </span>
                     </li>
                 </ul>
@@ -117,7 +117,7 @@
                     </a>
                 </div>
                 <?php
-                    if (isset($_SESSION['nickname'])) {
+                    if (isset($_SESSION['nickname'])):
                 ?>
                 <div class="bar4">
                     <a class="nav-link underline-effect" href="/thefirst/index.php?action=adminPage">
@@ -125,23 +125,23 @@
                     </a>
                 </div>
                 <?php
-                    }
+                    endif;
                 ?>
                 <div class="bar5">
                     <?php
-                        if (isset($_SESSION['id']) and isset($_SESSION['nickname'])) {
+                        if (isset($_SESSION['id']) and isset($_SESSION['nickname'])):
                     ?>
                     <a class="nav-link underline-effect" href="/thefirst/view/frontend/logout.php">
                         <i class="fas fa-lock"></i>
                     </a>
                     <?php
-                        } else {
+                        else:
                     ?>
                     <a class="nav-link underline-effect" href="/thefirst/index.php?action=loginPage">
                         <i class="fas fa-lock-open"></i>
                     </a>
                     <?php
-                        }
+                        endif;
                     ?>
                 </div>
             </button>

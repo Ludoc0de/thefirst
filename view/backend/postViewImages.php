@@ -3,7 +3,7 @@
 <?php
     ob_start();
 
-    if (isset($_SESSION['nickname'])) {
+    if (isset($_SESSION['nickname'])):
 ?>
 
 <section class="postviewImage-section">
@@ -14,13 +14,13 @@
         <div class="postviewImage-second-div">
             <p>images actuelles :</p>
             <?php
-                while ($image = $images->fetch()) {
+                while ($image = $images->fetch()):
             ?>
             <span class="postView-images">
                 <img class="postView-images-size" src="public/images/postimages/<?=$image['postview_image'];?>">
             </span>
             <?php 
-                } 
+                endwhile; 
             ?>
         </div>
         <form action="index.php?action=addImages&amp;id=<?=$post['id'];?>" method="post" enctype="multipart/form-data">
@@ -42,7 +42,7 @@
 </section>
 
 <?php
-    }
+    endif;
 ?>
 
 <?php $content = ob_get_clean()?>

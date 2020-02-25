@@ -3,7 +3,7 @@
 <?php
     ob_start();
 
-    if (isset($_SESSION['nickname'])) {
+    if (isset($_SESSION['nickname'])):
 ?>
 
 <section class="managePost-first-section">
@@ -15,7 +15,7 @@
     </div>
     <div class=" managePost-content-div">
         <?php
-            while ($dataPosts = $posts->fetch()) {
+            while ($dataPosts = $posts->fetch()):
         ?>
 
         <div class="managePost-div">
@@ -46,7 +46,7 @@
             </p>
         </div>
         <?php
-        }
+        endwhile;
             $posts->closeCursor();
         ?>
     </div>
@@ -63,22 +63,22 @@
     </div>
     <p class="managePost-second-section-p">
         <?php
-        while ($seeWarning = $seeWarningComment->fetch()) {
-            if ($seeWarning['warning'] > 0) {
+        while ($seeWarning = $seeWarningComment->fetch()):
+            if ($seeWarning['warning'] > 0):
         ?>
         <i class="fas fa-circle"></i>
         <?=$seeWarning['title'];?>
         <br>
         <?php
-        }
-            }
-            $seeWarningComment->closeCursor();
-            ?>
+            endif;
+        endwhile;
+        $seeWarningComment->closeCursor();
+        ?>
     </p>
 </section>
 
 <?php
-    }
+    endif;
 ?>
 
 <?php $content = ob_get_clean()?>

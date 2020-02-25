@@ -25,25 +25,24 @@ function addPost($draft, $title, $content, $view_image)
     $addPost = $postManager->newPost($draft, $title, $content, $view_image);
 
 
-    if (isset($_FILES['view_image']) AND $_FILES['view_image']['error'] == 0){
+    if (isset($_FILES['view_image']) && $_FILES['view_image']['error'] == 0):
         
-         if ($_FILES['view_image']['size'] <= 5000000){
+         if ($_FILES['view_image']['size'] <= 5000000):
              
             $fileInfos = pathinfo($_FILES['view_image']['name']);
             $extension_upload = $fileInfos['extension'];
             $extensions_allowed = array('jpg', 'jpeg', 'JPG', 'JPEG');
-            if (in_array($extension_upload, $extensions_allowed))
-                {
+            if (in_array($extension_upload, $extensions_allowed)):
                   move_uploaded_file($_FILES['view_image']['tmp_name'], 'public/images/' . basename($_FILES['view_image']['name']));
-                }
-        }
-    }
+            endif;
+        endif;
+    endif;
 
-    if ($addPost === false) {
-        die("Erreur d'ajout du billet");
-    } else {
+    if ($addPost === false):
+        die('Erreur d\'ajout du billet');
+    else:
         header("Location: index.php?action=erasePost");
-    }
+    endif;
 }
 
 //postInBackend
@@ -64,11 +63,11 @@ function deletePost($postId)
     $postManager = new Neographe\Projet5\Model\PostManager();
     $deletePost = $postManager->removePost($postId);
 
-    if ($deletePost === false) {
+    if ($deletePost === false):
         die("Erreur de suppréssion du billet");
-    } else {
+    else:
         header("Location: index.php?action=erasePost");
-    }
+    endif;
 }
 
 //editPostView
@@ -86,25 +85,24 @@ function updatePost($draft, $id, $title, $content, $view_image)
     $postManager = new Neographe\Projet5\Model\PostManager();
     $updatePost = $postManager->upgradePost($draft, $id, $title, $content, $view_image);
 
-    if (isset($_FILES['view_image']) AND $_FILES['view_image']['error'] == 0){
+    if (isset($_FILES['view_image']) AND $_FILES['view_image']['error'] == 0):
         
-         if ($_FILES['view_image']['size'] <= 5000000){
+         if ($_FILES['view_image']['size'] <= 5000000):
              
             $fileInfos = pathinfo($_FILES['view_image']['name']);
             $extension_upload = $fileInfos['extension'];
             $extensions_allowed = array('jpg', 'jpeg', 'JPG', 'JPEG');
-            if (in_array($extension_upload, $extensions_allowed))
-                {
+            if (in_array($extension_upload, $extensions_allowed)):
                   move_uploaded_file($_FILES['view_image']['tmp_name'], 'public/images/' . basename($_FILES['view_image']['name']));
-                }
-        }
-    }
+            endif;
+        endif;
+    endif;
 
-    if ($updatePost === false) {
+    if ($updatePost === false):
         die("Erreur de mise à jour du billet");
-    } else {
+    else:
         header("Location: index.php?action=erasePost");
-    }
+    endif;
 }
 
 function postViewImages()
@@ -123,25 +121,24 @@ function addImages($postId, $postImages)
     $imagesManager = new Neographe\Projet5\Model\ImagesManager();
     $addImages = $imagesManager->postImages($postId, $postImages);
 
-     if (isset($_FILES['postviewImage']) AND $_FILES['postviewImage']['error'] == 0){
+     if (isset($_FILES['postviewImage']) AND $_FILES['postviewImage']['error'] == 0):
         
-         if ($_FILES['postviewImage']['size'] <= 5000000){
+         if ($_FILES['postviewImage']['size'] <= 5000000):
              
             $fileInfos = pathinfo($_FILES['postviewImage']['name']);
             $extension_upload = $fileInfos['extension'];
             $extensions_allowed = array('jpg', 'jpeg', 'JPG', 'JPEG');
-            if (in_array($extension_upload, $extensions_allowed))
-                {
+            if (in_array($extension_upload, $extensions_allowed)):
                   move_uploaded_file($_FILES['postviewImage']['tmp_name'], 'public/images/postimages/' . basename($_FILES['postviewImage']['name']));
-                }
-        }
-    }
+                endif;
+        endif;
+    endif;
 
-    if ($addImages === false) {
+    if ($addImages === false):
         die("Erreur d'ajout de l'image");
-    }else {
+    else:
         header("Location: index.php?action=postViewImages&id=" . $postId);
-    }
+    endif;
 }
 
 //moderateCommentView
@@ -158,22 +155,22 @@ function moderateComment($postId, $author, $comment)
     $commentManager = new Neographe\Projet5\Model\CommentManager();
     $moderateComment = $commentManager->modifyComment($postId, $author, $comment);
 
-    if ($moderateComment === false) {
+    if ($moderateComment === false):
         die("Erreur de mise à jour du billet");
-    } else {
+    else:
         header("Location: index.php?action=erasePost");
-    }
+    endif;
 }
 //warningComment
 function warningComment($warning)
 {
     $commentManager = new Neographe\Projet5\Model\CommentManager();
     $warningComment = $commentManager->signalComment($warning);
-    if ($warningComment === false) {
+    if ($warningComment === false):
         die("Erreur de mise à jour du billet");
-    } else {
+    else:
         header("Location: index.php");
-    }
+    endif;
 }
 // deleteComment
 function deleteComment($postId)
@@ -181,11 +178,11 @@ function deleteComment($postId)
     $commentManager = new Neographe\Projet5\Model\CommentManager();
     $deleteComment = $commentManager->removeComment($postId);
 
-    if ($deleteComment === false) {
+    if ($deleteComment === false):
         die("Erreur de suppréssion du billet");
-    } else {
+    else:
         header("Location: index.php?action=erasePost");
-    }
+    endif;
 }
 //countView
 function viewNumber($view)
@@ -193,7 +190,7 @@ function viewNumber($view)
     $postManager = new Neographe\Projet5\Model\PostManager();
     $viewNumber = $postManager->viewNumber($view);
     
-    if ($viewNumber === false) {
+    if ($viewNumber === false):
         die("Erreur incrementation");
-    } 
+    endif;
 }

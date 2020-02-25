@@ -16,8 +16,8 @@
 
 <section class="first-section">
     <?php
-        while ($dataPosts = $posts->fetch()) {
-            if ($dataPosts['draft'] == 0){
+        while ($dataPosts = $posts->fetch()):
+            if ($dataPosts['draft'] == 0):
 
     ?>
     <div class="first-div-section">
@@ -41,7 +41,8 @@
         <img src="public/images/<?=$dataPosts['view_image'];?>">
     </div>
     <?php
-        }}
+        endif;    
+        endwhile;
         $posts->closeCursor();
     ?>
 </section>

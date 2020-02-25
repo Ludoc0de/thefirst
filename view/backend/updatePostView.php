@@ -3,7 +3,7 @@
 <?php
     ob_start();
 
-    if (isset($_SESSION['nickname'])) {
+    if (isset($_SESSION['nickname'])):
 ?>
 
 <section class="updatePost-section">
@@ -19,10 +19,10 @@
         <form action="index.php?action=updatePost&amp;id=<?=$post['id'];?>" method="post" enctype="multipart/form-data">
             <div class="radio">
                 <p class="radio-p">
-                    <?php if($post['draft'] > 0) {?>
+                    <?php if($post['draft'] > 0):?>
                     <span> Ceci est un brouillon !</span>
                     <?php
-                    }
+                        endif;
                     ?>
                     Votre choix, brouillon ?
                 </p>
@@ -54,7 +54,7 @@
 </section>
 
 <?php
-    }
+    endif;
 ?>
 
 <?php $content = ob_get_clean()?>

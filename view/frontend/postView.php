@@ -15,13 +15,13 @@
                 <?=($post['content']);?>
             </p>
             <?php
-                while ($image = $images->fetch()) {
+                while ($image = $images->fetch()):
             ?>
             <span class="postView-images">
                 <img class="postView-images-size" src="public/images/postimages/<?=$image['postview_image'];?>">
             </span>
             <?php 
-                } 
+                endwhile; 
             ?>
         </div>
 
@@ -54,7 +54,7 @@
     </button>
     <div class="postView-comment-div">
         <?php
-            while ($comment = $comments->fetch()) {
+            while ($comment = $comments->fetch()):
         ?>
         <p class="postView-second-p">
             <span class="postView-comment-date">
@@ -72,20 +72,20 @@
             </a>
         </p>
         <?php
-            if (($comment['warning']) > 0) {
+            if (($comment['warning']) > 0):
         ?>
         <p class="warning-comment">
             Cet auteur a été signalé
             <span class="warning-underline"></span>
         </p>
         <?php
-            };
+            endif;
         ?>
         <p class="postView-third-p">
             <?=nl2br(htmlspecialchars($comment['comment']));?>
         </p>
         <?php
-            }   
+            endwhile;   
         ?>
     </div>
 </section>

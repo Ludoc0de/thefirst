@@ -3,7 +3,7 @@
 <?php
     ob_start();
 
-    if (isset($_SESSION['nickname'])) {
+    if (isset($_SESSION['nickname'])):
 ?>
 
 <section class="moderate-section">
@@ -18,23 +18,23 @@
         <a href="index.php?action=erasePost" class="tag-return">Retour</a>
     </p>
     <?php
-        while ($comment = $comments->fetch()) {
+        while ($comment = $comments->fetch()):
     ?>
     <form action="index.php?action=moderateComment&amp;id=<?=$comment['id'];?>" method="post">
         <div class="moderate-form">
             <label for="author">Auteur</label>
             <?php
-                if (($comment['warning']) > 0) {
+                if (($comment['warning']) > 0):
             ?>
             <p>
                 Cet auteur a été signalé : <?=$comment['warning'] . ' fois';?>
             </p>
             <?php
-                } else {
+                else:
             ?>
             <br>
             <?php
-                }
+                endif;
             ?>
             <input type="text" id="author" class="moderate-input" name="author" value="<?=$comment['author'];?>" />
             <br>
@@ -54,14 +54,14 @@
         </div>
     </form>
     <?php
-        }
+    endwhile;
     ?>
     <p>
         <a href="index.php?action=erasePost" class="tag-return">Retour</a>
     </p>
 </section>
 <?php
-    }
+    endif;
 ?>
 
 <?php $content = ob_get_clean()?>

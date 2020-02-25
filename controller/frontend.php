@@ -30,24 +30,24 @@ function addComment($postId, $author, $comment)
     $commentManager = new Neographe\Projet5\Model\CommentManager();
     $addComment = $commentManager->postComment($postId, $author, $comment);
 
-    if ($addComment === false) {
-        die("Erreur d'ajout du commentaire");
-    } else {
+    if ($addComment === false):
+        die('Erreur d\'ajout du commentaire');
+    else:
         header("Location: index.php?action=post&id=" . $postId);
-    }
+    endif;
 }
 
 //verify member
 function loginPage()
 {
    
-    if (!empty($_POST['nickname']) && !empty($_POST['pass'])) {
+    if (!empty($_POST['nickname']) && !empty($_POST['pass'])):
         checkLogin($_POST['nickname'], $_POST['pass']);
         throw new Exception("identifiant ou mot de passe incorrect");
 
-    } elseif (isset($_POST['nickname']) || isset($_POST['pass'])) {
+    elseif (isset($_POST['nickname']) || isset($_POST['pass'])):
         throw new Exception("merci de renseigner tous les champs");
-    }
+    endif;
 
     require 'view/frontend/login.php';
 }
@@ -58,12 +58,12 @@ function checkLogin($nickname, $pass)
     $check = $logManager->logIn($nickname, $pass);
     $checkPass = password_verify($_POST['pass'], $check['pass']);
 
-    if ($checkPass) {
+    if ($checkPass):
         $_SESSION['id'] = $check['id'];
         $_SESSION['nickname'] = $check['nickname'];
 
         header("Location: index.php?action=adminPage");
-    }
+    endif;
 }
 
 function adminPage()
