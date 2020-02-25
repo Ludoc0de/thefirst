@@ -51,7 +51,9 @@
         ?>
     </div>
 </section>
-
+<button id="topButton">
+    <i class="fas fa-chevron-up"></i>
+</button>
 <section class="managePost-second-section">
     <div>
         <h3>
