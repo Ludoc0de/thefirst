@@ -483,4 +483,9 @@ li:hover .navbar-span-2 {
     width: 320px;
     margin: auto;
   }
+
+  #topButton {
+    bottom: 80px;
+    left: 3px;
+  }
 }
