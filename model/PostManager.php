@@ -62,4 +62,14 @@ class PostManager extends Manager
         return $updatePost;
     }
 
+    public function viewNumber($view)
+    {
+        $db = $this->dbConnect();
+
+        $count = $db->prepare('UPDATE posts SET view = view+1 WHERE id=?');
+        $viewNumber = $count->execute(array($view));
+
+        return $viewNumber;
+    }
+
 }
