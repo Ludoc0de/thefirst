@@ -159,7 +159,7 @@
             <i class="fab fa-instagram icon"></i>
         </a>
         <p>NEOGRAPHE</p>
-        <a href="https://www.instagram.com/p/B3W2dSKidW_/" target="_blank" class="footer-a">
+        <a href="https://www.instagram.com/p/BladnmdBBFb/" target="_blank" class="footer-a">
             <i class="icon">I</i>
         </a>
         <a href="http://www.neographe.org" target="_blank" class="footer-a">
