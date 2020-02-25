@@ -10,6 +10,7 @@ try {
         } elseif ($_GET['action'] == 'post') {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 post();
+                viewNumber($_GET['id']);
             } else {
                 throw new Exception("aucun identifiant de billet envoyé");
             }
