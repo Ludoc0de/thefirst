@@ -160,10 +160,10 @@
         </a>
         <p>NEOGRAPHE</p>
         <a href="https://www.instagram.com/p/BladnmdBBFb/" target="_blank" class="footer-a">
-            <i class="icon">I</i>
+            <i class="fas fa-info-circle icon"></i>
         </a>
         <a href="http://www.neographe.org" target="_blank" class="footer-a">
-            <i class="icon">@</i>
+            <i class="fas fa-at icon"></i>
         </a>
     </footer>
 
