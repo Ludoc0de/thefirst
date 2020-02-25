@@ -22,7 +22,7 @@
             <li>
                 <h2>
                     <a class="content-a" href="index.php?action=erasePost">
-                        administrer les billets
+                        Administrer les billets
                     </a>
                 </h2>
             </li>
