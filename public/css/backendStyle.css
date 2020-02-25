@@ -101,6 +101,14 @@ li:hover .navbar-span-2 {
   border-bottom: 2px solid orange;
 }
 
+.managePost-p {
+  color: #172940;
+  border-radius: 3px;
+  padding-left: 3px;
+  width: 55%;
+  background: linear-gradient(145deg, orange 0%, orangered 100%);
+}
+
 /*admin view*/
 
 .adminView-section {
@@ -300,8 +308,8 @@ li:hover .navbar-span-2 {
 }
 
 .managePost-div {
-  width: 300px;
-  height: 250px;
+  width: 310px;
+  height: 270px;
   background-color: white;
   padding-left: 20px;
   margin: 50px 35px;
