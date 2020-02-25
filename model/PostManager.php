@@ -9,7 +9,7 @@ class PostManager extends Manager
     public function getPosts()
     {
         $db = $this->dbConnect();
-        $req = $db->query('SELECT draft, id, title, content, view_image, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin\') AS creation_date_fr FROM posts ORDER BY creation_date DESC');
+        $req = $db->query('SELECT draft, id, title, content, view_image, view, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin\') AS creation_date_fr FROM posts ORDER BY creation_date DESC');
 
         return $req;
     }
@@ -70,6 +70,14 @@ class PostManager extends Manager
         $viewNumber = $count->execute(array($view));
 
         return $viewNumber;
+    }
+
+    public function seeCounter()
+    {
+        $db = $this->dbConnect();
+        $getCounter = $db->query('SELECT view FROM posts ORDER BY view DESC');
+
+        return $getCounter;
     }
 
 }
