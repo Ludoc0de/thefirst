@@ -41,11 +41,14 @@
                 onclick="return confirm('attention suppression définitive !')">
                 Supprimer ?
             </a>
+            <p class="articleView">
+                Article vu <?=$dataPosts['view'].' fois';?>
+            </p>
         </div>
         <?php
         }
-        $posts->closeCursor();
-    ?>
+            $posts->closeCursor();
+        ?>
     </div>
 </section>
 
