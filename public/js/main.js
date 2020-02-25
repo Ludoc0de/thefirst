@@ -15,6 +15,7 @@ class moveEffect {
         this.getBurger.addEventListener("click", this.openMenu.bind(this));
         this.window.addEventListener("scroll", this.navbarChange.bind(this));
         this.window.addEventListener("scroll", this.pop.bind(this));
+        this.topButton.addEventListener("click", this.top.bind(this));
         this.accordion.addEventListener("click", this.commentOpen.bind(this));
     }
 
@@ -42,6 +43,11 @@ class moveEffect {
         } else {
             this.topButton.style.display = "none";
         }
+    }
+
+    top() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = -0;
     }
 
     commentOpen() {
