@@ -4,148 +4,153 @@ require 'controller\frontend.php';
 require 'controller\backend.php';
 
 try {
-    if (isset($_GET['action'])) {
-        if ($_GET['action'] == 'listPosts') {
+    if (isset($_GET['action'])):
+
+        if ($_GET['action'] == 'listPosts'):
             listPosts();
-        } elseif ($_GET['action'] == 'post') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        elseif ($_GET['action'] == 'post'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 post();
                 viewNumber($_GET['id']);
-            } else {
+            else:
                 throw new Exception("aucun identifiant de billet envoyé");
-            }
-        } elseif ($_GET['action'] == 'addComment') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
-                if (!empty($_POST['author']) && !empty($_POST['comment'])) {
+            endif;
+        elseif ($_GET['action'] == 'addComment'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
+                if (!empty($_POST['author']) && !empty($_POST['comment'])):
                     addComment($_GET['id'], $_POST['author'], $_POST['comment']);
-                } else {
+                else:
                     throw new Exception("merci de renseigner tous les champs");
-                }
-            } else {
+                endif;
+            else:
                 throw new Exception("aucun identifiant de billet envoyé");
-            }
-        }
-        // addMember
-        elseif ($_GET['action'] == 'addMember') {
-            if (!empty($_POST['nickname']) && !empty($_POST['pass'])) {
-                addMember($_POST['nickname'], $_POST['pass']);
-            } else {
-                throw new Exception("merci de renseigner tous les champs");
-            }
-        }
-        //loginPage
-        elseif ($_GET['action'] == 'loginPage') {
-            loginPage();
-        }
+            endif;
+        endif;
+        // addMember uncomment if want addMenber
+        /*
+        if ($_GET['action'] == 'addMember'):
+            if (!empty($_POST['nickname']) && !empty($_POST['pass'])):
+            addMember($_POST['nickname'], $_POST['pass']);
+            else:
+            throw new Exception("merci de renseigner tous les champs");
+            endif;
+        endif;
+        */
 
+        //loginPage
+        if ($_GET['action'] == 'loginPage'):
+            loginPage();
+        endif;
+    
         //ADMIN//
 
         //adminPage
-        elseif ($_GET['action'] == 'adminPage') {
+        if ($_GET['action'] == 'adminPage'):
             adminPage();
-        }
+        endif;
 
         //creatPage
-        elseif ($_GET['action'] == 'createPost') {
+        if ($_GET['action'] == 'createPost'):
             createPost();
-        }
+        endif;
 
         //addPost
-        elseif ($_GET['action'] == 'addPost') {
-             if (isset($_POST['draft']) && !empty($_POST['title'])) {
-                if(!empty($_POST['content']) && !empty($_FILES['view_image']['name'])){
-                     addPost($_POST['draft'], $_POST['title'], $_POST['content'], $_FILES['view_image']['name']);
-                } else {
-                    throw new Exception("merci de renseignez le contenu et l'image");
-                }
-            }else {
-                    throw new Exception("merci de renseignez le titre et le bouton brouillon");
-                }
-        }
-
+         if ($_GET['action'] == 'addPost'):
+            if (!isset($_POST['draft'])):
+                throw new Exception('merci de renseignez le brouillon');
+            elseif (empty($_POST['title'])):
+                throw new Exception('merci de renseignez le titre');
+            elseif (empty($_POST['content'])):
+                throw new Exception('merci de renseignez le contenu');
+            elseif (empty($_FILES['view_image']['name'])):
+                throw new Exception('merci de renseignez l\'image');
+            else:
+                addPost($_POST['draft'], $_POST['title'], $_POST['content'], $_FILES['view_image']['name']);
+            endif;
+        endif;
+        
         // postInBackend
-        elseif ($_GET['action'] == 'erasePost') {
+        if ($_GET['action'] == 'erasePost'):
             postInBackend();
-        }
+        endif;
 
         // deletePost
-        elseif ($_GET['action'] == 'deletePost') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        if ($_GET['action'] == 'deletePost'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 deletePost($_GET['id']);
-            } else {
+            else:
                 throw new Exception("merci de renseigner tous les champs");
-            }
-        }
+            endif;
+        endif;
 
         //editPostView
-        elseif ($_GET['action'] == 'updatePostView') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        if ($_GET['action'] == 'updatePostView'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 editPostView();
-            }
-        }
+            endif;
+        endif;
         
         //postViewImages
-        elseif ($_GET['action'] == 'postViewImages') {
+        if ($_GET['action'] == 'postViewImages'):
                 postViewImages();
-        }
+        endif;
 
         //addImages
-        elseif ($_GET['action'] == 'addImages'){
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        if ($_GET['action'] == 'addImages'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 addImages($_GET['id'], $_FILES['postviewImage']['name']);
-                
-            } else {
+            else:
                 var_dump ($_GET['id']);
                 throw new Exception("merci de renseigner tous les champs");
-            }
-        }
+            endif;
+        endif;
    
         // updatePost
-        elseif ($_GET['action'] == 'updatePost') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        if ($_GET['action'] == 'updatePost'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 updatePost($_POST['draft'], $_GET['id'], $_POST['title'], $_POST['content'], $_FILES['view_image']['name']);
-            } else {
+            else:
                 throw new Exception("merci de renseigner tous les champs");
-            }
-        }
+            endif;
+        endif;
 
         //moderateCommentView
-        elseif ($_GET['action'] == 'moderateCommentView') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        if ($_GET['action'] == 'moderateCommentView'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 moderateCommentView();
-            }
-        }
+            endif;
+        endif;
 
         //moderateComment
-        elseif ($_GET['action'] == 'moderateComment') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        if ($_GET['action'] == 'moderateComment'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 moderateComment($_GET['id'], $_POST['author'], $_POST['comment']);
-            } else {
+            else:
                 throw new Exception("merci de renseigner tous les champs");
-            }
-        }
+            endif;
+        endif;
 
         //warningComment
-        elseif ($_GET['action'] == 'warningComment') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        if ($_GET['action'] == 'warningComment'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 warningComment($_GET['id']);
-            } else {
+            else:
                 throw new Exception("pas de id !");
-            }
-        }
+            endif;
+        endif;
 
         // deletePost
-        elseif ($_GET['action'] == 'deleteComment') {
-            if (isset($_GET['id']) && $_GET['id'] > 0) {
+        if ($_GET['action'] == 'deleteComment'):
+            if (isset($_GET['id']) && $_GET['id'] > 0):
                 deleteComment($_GET['id']);
-            } else {
+            else:
                 throw new Exception("pas de id !");
-            }
-        }
+            endif;
+        endif;
 
-    } else {
+    else:
         listPosts();
-    }
+    endif;
 
 } catch (Exception $e) {
     echo 'Erreur : ' . $e->getMessage();
