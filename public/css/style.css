@@ -408,6 +408,10 @@ li:hover .navbar-span-2 {
   display: none;
 }
 
+#topButton > i {
+  display: none;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -625,7 +629,7 @@ footer > p {
 
   /*top button*/
   #topButton {
-    display: block;
+    display: none;
     z-index: 10;
     position: fixed;
     bottom: 200px;
@@ -636,6 +640,10 @@ footer > p {
     border-radius: 5px;
     box-shadow: 2px 2px 7px #172940;
     background: linear-gradient(145deg, orange 0%, orangered 100%);
+  }
+
+  #topButton > i {
+    display: block;
   }
 
   /*footer*/
