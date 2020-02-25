@@ -6,8 +6,8 @@
     if (isset($_SESSION['nickname'])):
 ?>
 
-<section class="postviewImage-section">
-    <div class="postviewImage-first-div">
+<section class="manage-section">
+    <div class="manage-div">
         <h1>
             Ajouter des images
         </h1>
@@ -29,7 +29,7 @@
                 <input class="postviewImage-input" type="file" id="content-image" name="postviewImage" required />
             </div>
             <div>
-                <input type="submit" class="postviewImage-button" value="Envoyer"
+                <input type="submit" class="manage-button" value="Envoyer"
                     onclick="return confirm('Confirmez-vous l'\'envois ?')" />
             </div>
             <div class="imageSend">

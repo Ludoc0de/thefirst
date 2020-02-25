@@ -2,8 +2,8 @@
 
 <?php ob_start();?>
 
-<section class="createPost-section">
-    <div class="createPost-first-div">
+<section class="manage-section">
+    <div class="manage-div">
         <h1>
             Creer un article
         </h1>
@@ -18,19 +18,19 @@
                 <label for="non">Non</label>
                 <input type="radio" name="draft" id="draft-no" value="0" />
             </div>
-            <div class="createPost-form">
+            <div class="manage-form">
                 <label for="title">Titre</label><br>
-                <input class="createPost-input" type="text" id="title" name="title" />
+                <input class="manage-input" type="text" id="title" name="title" />
                 <br>
                 <label for="newPost">Contenu</label><br>
-                <textarea class="createPost-textarea textareaTiny" name="content" rows="5"></textarea>
+                <textarea class="manage-textarea textareaTiny" name="content" rows="5"></textarea>
                 <br>
                 <label for="title-image">Image titre</label><br>
                 <input class="createPost-image" type="file" id="title-image" name="view_image" />
                 <br>
             </div>
             <div>
-                <input type="submit" id="submit" class="createPost-button" />
+                <input type="submit" id="submit" class="manage-button" />
             </div>
         </form>
     </div>

@@ -6,8 +6,8 @@
     if (isset($_SESSION['nickname'])):
 ?>
 
-<section class="moderate-section">
-    <div class="moderate-first-div">
+<section class="manage-section">
+    <div class="manage-div">
         <h1>
             Modérer commentaire
         </h1>
@@ -21,7 +21,7 @@
         while ($comment = $comments->fetch()):
     ?>
     <form action="index.php?action=moderateComment&amp;id=<?=$comment['id'];?>" method="post">
-        <div class="moderate-form">
+        <div class="manage-form">
             <label for="author">Auteur</label>
             <?php
                 if (($comment['warning']) > 0):
@@ -36,14 +36,14 @@
             <?php
                 endif;
             ?>
-            <input type="text" id="author" class="moderate-input" name="author" value="<?=$comment['author'];?>" />
+            <input type="text" id="author" class="manage-input" name="author" value="<?=$comment['author'];?>" />
             <br>
             <label for="comment">Commentaire</label><br>
-            <textarea id="comment" class="moderate-textarea textareaTiny" name="comment"
+            <textarea id="comment" class="manage-textarea textareaTiny" name="comment"
                 rows="5"><?=$comment['comment'];?></textarea>
         </div>
         <div>
-            <input type="submit" class="moderate-button" value="Modifier"
+            <input type="submit" class="manage-button" value="Modifier"
                 onclick="return confirm('Confirmez-vous la modification ?')" />
         </div>
         <div class="moderate-alert">

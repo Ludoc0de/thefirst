@@ -157,37 +157,25 @@ li:hover .navbar-span-2 {
   height: 100px;
 }
 
-.createPost-section,
-.updatePost-section,
-.moderate-section,
-.postviewImage-section {
+.manage-section {
   width: 600px;
   margin: auto;
 }
 
-.createPost-first-div,
-.updatePost-first-div,
-.postviewImage-first-div,
-.moderate-first-div {
+.manage-div {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
 }
 
-.createPost-form,
-.updatePost-form,
-.moderate-form {
+.manage-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.createPost-input,
-.createPost-textarea,
-.updatePost-input,
-.updatePost-textarea,
-.moderate-input,
-.moderate-textarea {
+.manage-input,
+.manage-textarea {
   width: 100%;
   margin: 15px 0px;
   border-radius: 5px;
@@ -195,18 +183,12 @@ li:hover .navbar-span-2 {
   transition: 0.25s linear;
 }
 
-.createPost-input:focus,
-.createPost-textarea:focus,
-.updatePost-input:focus,
-.updatePost-textarea:focus,
-.moderate-input:focus,
-.moderate-textarea:focus {
+.manage-input:focus,
+.manage-textarea:focus {
   box-shadow: 0px 0px 8px orange;
 }
 
-.createPost-input,
-.updatePost-input,
-.moderate-input {
+.manage-input {
   height: 25px;
 }
 
@@ -219,9 +201,7 @@ li:hover .navbar-span-2 {
   color: #172940;
   font-weight: bold;
 }
-.createPost-textarea,
-.updatePost-textarea,
-.moderate-textarea {
+.manage-textarea {
   height: 80px;
 }
 
@@ -243,10 +223,7 @@ li:hover .navbar-span-2 {
   font-weight: bold;
 }
 
-.createPost-button,
-.updatePost-button,
-.moderate-button,
-.postviewImage-button {
+.manage-button {
   border-radius: 10px;
   color: orange;
   background-color: #172940;
@@ -477,9 +454,7 @@ li:hover .navbar-span-2 {
 
   /*createPost updatePost moderate*/
 
-  .createPost-section,
-  .updatePost-section,
-  .moderate-section {
+  .manage-section {
     width: 320px;
     margin: auto;
   }

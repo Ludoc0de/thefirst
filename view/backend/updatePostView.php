@@ -6,8 +6,8 @@
     if (isset($_SESSION['nickname'])):
 ?>
 
-<section class="updatePost-section">
-    <div class="updatePost-first-div">
+<section class="manage-section">
+    <div class="manage-div">
         <h1>
             Modifier les chapitres
         </h1>
@@ -34,16 +34,16 @@
             <label for="title-image-update">Ajouter ou remplacer image titre</label><br>
             <input class="createPost-image" type="file" id="title-image-update" name="view_image" />
             <br>
-            <div class="updatePost-form">
+            <div class="manage-form">
                 <label for="title">Titre</label><br>
-                <input type="text" id="title" name="title" class="updatePost-input" value="<?=$post['title'];?>" />
+                <input type="text" id="title" name="title" class="manage-input" value="<?=$post['title'];?>" />
                 <br>
                 <label for="newPost">Contenu</label><br>
-                <textarea id="newPost" class="updatePost-textarea textareaTiny" name="content"
+                <textarea id="newPost" class="manage-textarea textareaTiny" name="content"
                     rows="5"><?=$post['content'];?></textarea>
             </div>
             <div>
-                <input type="submit" class="updatePost-button" value="Modifier"
+                <input type="submit" class="manage-button" value="Modifier"
                     onclick="return confirm('Confirmez-vous la modification ?')" />
             </div>
         </form>
