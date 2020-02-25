@@ -150,7 +150,9 @@
     </header>
 
     <?=$content?>
-
+    <button id="topButton">
+        <i class="fas fa-chevron-up"></i>
+    </button>
     <footer>
         <a href="https://twitter.com/neographe_org" target="_blank" class="footer-a">
             <i class="fab fa-twitter icon"></i>
