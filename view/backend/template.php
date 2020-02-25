@@ -149,35 +149,6 @@
     </header>
     <?=$content?>
 
-    <!--
-    <footer class="border-top border-dark mt-5 text-right">
-        <p>
-            <img src="public\images\miniLivre2.jpg" class="rounded-top" alt="little book" />
-            Jean Forteroche, prenez votre plume !
-            <a href="https://twitter.com/neographe_org" target="_blank" class="text-dark text-decoration-none"
-                style="font-size: 25px;">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/asakura.cl/?hl=fr" target="_blank" class="text-dark text-decoration-none"
-                style="font-size: 25px;">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </p>
-        <p>
-            <a href="http://neographe.org/" class="text-dark text-decoration-none mr-1">
-                <i class="fas fa-circle text-warning border rounded border-dark"></i>À propos
-            </a>
-            <a href="http://neographe.org/" class="text-dark text-decoration-none mr-1">
-                <i class="fas fa-circle text-warning border rounded border-dark"></i>Mentions légales
-            </a>
-            <a href="http://neographe.org/" class="text-dark text-decoration-none mr-1">
-                <i class="fas fa-circle text-warning border rounded border-dark"></i>Contact
-            </a>
-        </p>
-        <p> Projet 4 formation OC </p>
-    </footer>
--->
-
     <!-- script -->
     <script src="/thefirst/public/js/main.js"></script>
     <script src="/thefirst/public/js/imageSend.js"></script>
