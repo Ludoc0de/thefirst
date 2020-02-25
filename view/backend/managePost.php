@@ -41,7 +41,7 @@
                 onclick="return confirm('attention suppression définitive !')">
                 Supprimer ?
             </a>
-            <p class="articleView">
+            <p class="managePost-p">
                 Article vu <?=$dataPosts['view'].' fois';?>
             </p>
         </div>
