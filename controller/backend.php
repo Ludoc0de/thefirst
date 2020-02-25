@@ -107,9 +107,6 @@ function updatePost($draft, $id, $title, $content, $view_image)
     }
 }
 
-
-//test
-
 function postViewImages()
 {   
     //$imageMessage = null;
@@ -146,8 +143,6 @@ function addImages($postId, $postImages)
         header("Location: index.php?action=postViewImages&id=" . $postId);
     }
 }
-
-//test
 
 //moderateCommentView
 function moderateCommentView()
@@ -191,4 +186,14 @@ function deleteComment($postId)
     } else {
         header("Location: index.php?action=erasePost");
     }
+}
+//countView
+function viewNumber($view)
+{
+    $postManager = new Neographe\Projet5\Model\PostManager();
+    $viewNumber = $postManager->viewNumber($view);
+    
+    if ($viewNumber === false) {
+        die("Erreur incrementation");
+    } 
 }
