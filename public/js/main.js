@@ -10,6 +10,7 @@ class moveEffect {
         this.getBurger = document.querySelector("#burger");
 
         this.topButton = document.querySelector("#topButton");
+        this.up = document.querySelector("header");
 
         //listener
         this.getBurger.addEventListener("click", this.openMenu.bind(this));
@@ -46,8 +47,9 @@ class moveEffect {
     }
 
     top() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = -0;
+        this.up.scrollIntoView({
+            behavior: 'smooth'
+        });
     }
 
     commentOpen() {
