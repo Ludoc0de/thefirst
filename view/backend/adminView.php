@@ -3,7 +3,7 @@
 <?php
     ob_start();
 
-    if (isset($_SESSION['nickname'])) {
+    if (isset($_SESSION['nickname'])):
 ?>
 
 <section class="adminView-section">
@@ -31,7 +31,7 @@
 </section>
 
 <?php
-    }
+    endif;
 ?>
 
 <?php $content = ob_get_clean()?>
